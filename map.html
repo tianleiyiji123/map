@@ -9,191 +9,246 @@
 <body>
 <div id="map" style="width: 100%; height: 700px;"></div>
 <div id="investMost" style="width: 550px;height: 285px;"></div>
+<div id="investOut" style="width: 550px;height: 285px;"></div>
+
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/echarts.min.js"></script>
 <script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/investMost.js"></script>
 <script>
-    var data = [
-        {}
-    ];
+    var investOut = echarts.init(document.querySelector("#investOut"));
     var investMostOption = {
+//        title: {
+//            text: '柱状图示例',
+//            subtext: 'https://segmentfault.com/q/1010000005137138',
+//            sublink: 'https://segmentfault.com/q/1010000005137138'
+//        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {
                 type: 'none'
             },
             formatter: function (params) {
-                return params[0].name + ': ' + params[0].value;
+                return params[0].value + "个";
             }
         },
         xAxis: {
+            show: false
+        },
+        yAxis: [{
             show: true,
             position: "bottom",
             type: "category",
             nameLocation: "middle",
             data: [{
-                value: "香港",
+                value: "新加坡",
                 textStyle: {
-                    color: '#4d4d4d'
+                    color: '#000000'
                 }
             },
                 {
-                    value: "美国",
-                    textStyle: {
-                        color: '#4d4d4d'
-                    }
-                },
-                {
                     value: "澳大利亚",
                     textStyle: {
-                        color: '#4d4d4d'
+                        color: '#000000'
                     }
                 },
                 {
-                    value: "印度尼西亚",
+                    value: "日本",
                     textStyle: {
-                        color: '#4d4d4d'
+                        color: '#000000'
                     }
                 },
                 {
-                    value: "英属维尔金群岛",
+                    value: "美国",
                     textStyle: {
-                        color: '#4d4d4d'
+                        color: '#000000'
+                    }
+                },
+                {
+                    value: "香港",
+                    textStyle: {
+                        color: '#000000'
                     }
                 }],
             axisTick: {show: false},
             axisLine: {show: false},
             axisLabel: {
-                interval: 0,
-                textStyle: {
-                    color: '#e54035'
-                }
+                interval: 0
+
             }
-        },
-        yAxis: {
-            show: true,
-            position: "left",
-            type: "value",
-            min: 0,
-            max: 250,
-            nameLocation: "middle",
-            splitLine: {
-                show: true,
-                lineStyle: {
-                    color: ['#b3b3b3'],
-                    opacity: .2
-                }
-            },
-            axisLine: {
-                show: false
-            },
-            axisTick: {
-                show: false
+        }, {
+            // 辅助 y 轴
+            show: false,
+            axisTick: {show: false},
+            axisLine: {show: false},
+            axisLabel: {
+                interval: 0
             },
             data: [{
+                value: "新加坡",
                 textStyle: {
-                    color: '#b3b3b3'
+                    color: '#8fd9d9'
                 }
             },
                 {
+                    value: "澳大利亚",
                     textStyle: {
-                        color: '#b3b3b3'
+                        color: '#e28f84'
                     }
                 },
                 {
+                    value: "日本",
                     textStyle: {
-                        color: '#b3b3b3'
+                        color: '#74c5e2'
                     }
                 },
                 {
+                    value: "美国",
                     textStyle: {
-                        color: '#b3b3b3'
+                        color: '#e28f84'
                     }
                 },
                 {
+                    value: "香港",
                     textStyle: {
-                        color: '#b3b3b3'
+                        color: '#8fd9d9'
                     }
-                }]
-        },
-        backgroundColor: "#f5f5f5",
+                }],
+        }],
         series: [{
-            name: 'hill',
-            type: 'pictorialBar',
-            barCategoryGap: '-130%',
-//            symbol: 'path://M0,10 L10,10 L5,0 L0,10 z',
-            symbol: 'path://M0,10 L10,10 C5.5,10 5.5,5 5,0 C4.5,5 4.5,10 0,10 z',
-            label: {
-                normal: {
-                    show: true,
-                    position: "top"
-                }
-            },
+            // 辅助系列
+            type: 'bar',
+            silent: true,
+            yAxisIndex: 1,
             itemStyle: {
                 normal: {
-                    opacity: 0.5
-                },
-                emphasis: {
-                    opacity: 1
+                    barBorderRadius: 4,
+                    color: '#ddd'
                 }
             },
-//            data: [152.6496, 45.0730, 27.4099, 24.1323, 17.3511],
-            data: [
+            barWidth: 20,
+            data: [{
+                name: "新加坡",
+                value: 1000,
+                itemStyle: {
+                    normal: {
+                        color: "#e6e6e6"
+
+                    }
+                }
+            },
                 {
-                    name: "香港",
-                    value: 152.6496,
+                    name: "澳大利亚",
+                    value: 1000,
                     itemStyle: {
                         normal: {
-                            color: "#94dddd"
+                            color: "#e6e6e6"
+
+                        }
+                    }
+                },
+                {
+                    name: "日本",
+                    value: 1000,
+                    itemStyle: {
+                        normal: {
+                            color: "#e6e6e6"
 
                         }
                     }
                 },
                 {
                     name: "美国",
-                    value: 45.0730,
+                    value: 1000,
                     itemStyle: {
                         normal: {
-                            color: "#e69389"
-                        }
-                    }
-                },
-                {
-                    name: "澳大利亚",
-                    value: 27.4099,
-                    itemStyle: {
-                        normal: {
-                            color: "#79cae6"
-                        }
-
-                    }
-                },
-                {
-                    name: "印度尼西亚",
-                    value: 24.1323,
-                    itemStyle: {
-                        normal: {
-                            color: "#e69389"
+                            color: "#e6e6e6"
 
                         }
                     }
                 },
                 {
-                    name: "英属维尔金群岛",
-                    value: 17.3511,
+                    name: "香港",
+                    value: 1000,
                     itemStyle: {
                         normal: {
-                            color: "#94dddd"
+                            color: "#e6e6e6"
+
                         }
+                    }
+                }],
+        }, {
+            type: 'bar',
+            label: {
+                normal: {
+                    show: true,
+                    position: "right",
+                    formatter: function (data) {
+                        return data.value + "个"
                     }
                 }
-            ],
-            z: 10
-        }]
-    };
-    var investMostbox = echarts.init(document.querySelector("#investMost"));
-    investMostbox.setOption(investMostOption)
+            },
+            data: [{
+                name: "新加坡",
+                value: 119,
+                itemStyle: {
+                    normal: {
+                        color: "#8fd9d9"
 
+                    }
+                }
+            },
+                {
+                    name: "澳大利亚",
+                    value: 119,
+                    itemStyle: {
+                        normal: {
+                            color: "#e28f84"
+
+                        }
+                    }
+                },
+                {
+                    name: "日本",
+                    value: 129,
+                    itemStyle: {
+                        normal: {
+                            color: "#74c5e2"
+
+                        }
+                    }
+                },
+                {
+                    name: "美国",
+                    value: 691,
+                    itemStyle: {
+                        normal: {
+                            color: "#e28f84"
+
+                        }
+                    }
+                },
+                {
+                    name: "香港",
+                    value: 991,
+                    itemStyle: {
+                        normal: {
+                            color: "#8fd9d9"
+
+                        }
+                    }
+                }],
+            barWidth: 20,
+            itemStyle: {
+                normal: {
+                    barBorderRadius: 4,
+                    shadowColor: 'rgba(0, 0, 0, 0.1)',
+                    shadowBlur: 20,
+                }
+            },
+        },]
+    };
+    investOut.setOption(investMostOption)
 </script>
 </html>
