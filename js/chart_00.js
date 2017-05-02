@@ -427,7 +427,7 @@ mapData.forEach(function (itemOpt) {
     }
 });
 
-var option = {
+var ECharts_00_option = {
     backgroundColor: {
         image: imgBgDom, // 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串
         repeat: 'no-repeat' // 是否平铺, 可以是 'repeat-x', 'repeat-y', 'no-repeat'
@@ -454,15 +454,12 @@ var option = {
         show: false,
         min: 0,
         max: max,
-//            inRange: {
-//                symbolSize: [6, 20]
-//            },
         target: {
             inRange: {
-                symbol: ["arrow", "circle", "rect"],
+                symbol: "circle",
                 symbolSize: [6, 30]
             }
-        },
+        }
     },
     geo: {
         name: 'World Population (2010)',
@@ -498,9 +495,9 @@ var option = {
     ]
 };
 $.get("json/world.json", function (worldjson) {
-    var Map = echarts.init(document.querySelector("#map"));
+    var chart_00 = echarts.init(document.querySelector("#ECharts_00"));
     echarts.registerMap('world', worldjson);
-    option.series = [{
+    ECharts_00_option.series = [{
         type: 'scatter',
         coordinateSystem: 'geo',
         hoverAnimation: true,
@@ -527,5 +524,5 @@ $.get("json/world.json", function (worldjson) {
             };
         })
     }];
-    Map.setOption(option);
+    chart_00.setOption(ECharts_00_option);
 })

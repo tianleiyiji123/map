@@ -4,7 +4,7 @@
 var data = [
     {}
 ];
-var investMostOption = {
+var ECharts_01_option = {
     tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -179,6 +179,6 @@ var investMostOption = {
         z: 10
     }]
 };
-var investMostbox = echarts.init(document.querySelector("#investMost"));
-investMostbox.setOption(investMostOption)
+var chart_01 = echarts.init(document.querySelector("#ECharts_01"));
+chart_01.setOption(ECharts_01_option);
 
