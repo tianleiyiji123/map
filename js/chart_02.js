@@ -3,11 +3,18 @@
  */
 var chart_02 = echarts.init(document.querySelector("#ECharts_02"));
 var ECharts_02_option = {
-//        title: {
-//            text: '柱状图示例',
-//            subtext: 'https://segmentfault.com/q/1010000005137138',
-//            sublink: 'https://segmentfault.com/q/1010000005137138'
-//        },
+    title: {
+        subtext: '投资项目数量',
+        textAlign: "left",
+        bottom: 0,
+        textStyle: {
+            color: "#000000",
+            fontSize: 14
+        },
+        left: "40%",
+        bottom: 20
+
+    },
     tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -26,6 +33,7 @@ var ECharts_02_option = {
         position: "bottom",
         type: "category",
         nameLocation: "middle",
+        boundaryGap: true,
         data: [{
             value: "新加坡",
             textStyle: {
@@ -35,7 +43,7 @@ var ECharts_02_option = {
             {
                 value: "澳大利亚",
                 textStyle: {
-                    color: '#000000'
+                    color: '#000000',
                 }
             },
             {
@@ -59,9 +67,13 @@ var ECharts_02_option = {
         axisTick: {show: false},
         axisLine: {show: false},
         axisLabel: {
-            interval: 0
+            interval: 0,
+            rotate:45
 
-        }
+        },
+        splitArea: {
+            interval: 2,
+        },
     }, {
         // 辅助 y 轴
         show: false,
@@ -70,6 +82,11 @@ var ECharts_02_option = {
         axisLabel: {
             interval: 0
         },
+        splitArea: {
+            interval: 2,
+            show: true
+        },
+
         data: [{
             value: "新加坡",
             textStyle: {
@@ -111,7 +128,7 @@ var ECharts_02_option = {
                 barBorderRadius: 4,
                 color: '#e6e6e6'
             },
-            emphasis:{
+            emphasis: {
                 barBorderRadius: 4,
                 color: '#e6e6e6'
             }
@@ -166,14 +183,14 @@ var ECharts_02_option = {
 
                     }
                 }
-            }],
+            }]
     }, {
         type: 'bar',
         silent: false,
         label: {
             normal: {
                 show: true,
-                position: "right",
+                position: "inside",
                 formatter: function (data) {
                     return data.value + "个"
                 }

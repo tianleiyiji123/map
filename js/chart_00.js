@@ -433,10 +433,10 @@ var ECharts_00_option = {
         repeat: 'no-repeat' // 是否平铺, 可以是 'repeat-x', 'repeat-y', 'no-repeat'
     },
     title: {
-        text: 'World Population (2011)',
-        subtext: 'From Gapminder',
-        left: 'center',
-        top: 'top',
+        // text: 'World Population (2011)',
+        // subtext: 'From Gapminder',
+        // left: 'center',
+        // top: 'top',
         textStyle: {
             color: '#fff'
         }

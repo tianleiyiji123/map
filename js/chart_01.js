@@ -65,6 +65,8 @@ var ECharts_01_option = {
         min: 0,
         max: 250,
         nameLocation: "middle",
+        minInterval:2,
+        interval:50,
         splitLine: {
             show: true,
             lineStyle: {
