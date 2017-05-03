@@ -1,0 +1,295 @@
+body, p, ul, li, h1, h2, h3, h4, h5, h6, b, input, option, dl, dd, dt, i, em, b {
+    font-style: normal;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: .6rem;
+    background: none;
+    font-weight: normal;
+    outline: none
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+a, a:hover, a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.mg-top {
+    margin-top: 20px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.clear-float {
+}
+
+.clear-float:after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    font-size: 1em;
+    color: #a9a9a9;
+    padding-top: 0.1em;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.h10 {
+    height: 10px;
+}
+
+/*主要样式*/
+.contain {
+    width: 100%;
+
+}
+
+.contain .top-map {
+    width: 100%;
+    height: 850px;
+    position: relative;
+}
+
+.inside {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contain .top-map .tm-title {
+    width: 100%;
+    height: 75px;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contain .top-map .tm-title .tmt-inside {
+    position: relative;
+}
+
+.contain .top-map .tm-title .tmt-logo {
+    width: 191px;
+    height: 44px;
+    background: url(../images/logo.png) center no-repeat;
+    position: absolute;
+    left: 0;
+    top: 15px
+}
+
+.contain .top-map .tm-title .tmt-name {
+    width: 746px;
+    height: 27px;
+    background: url(../images/name.png) center no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    margin-left: -350px;
+}
+
+.contain .top-map .tm-title .tmt-chat {
+    width: 120px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.contain .top-map .tm-title .tmt-chat a {
+    float: left;
+    margin: 10px;
+}
+
+.contain .top-map .tmi-position {
+    width: 350px;
+    height: 700px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.contain .top-map .tmi-hh-nei{
+
+    width: 350px;
+    height: 700px;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px 25px 25px 0;
+}
+
+.contain .top-map .tmi-position .info-shou {
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    background: url(../images/shou.png) center no-repeat;
+}
+.contain .top-map .info-fang{
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 350px;
+    margin-top: -50px;
+    background: url(../images/fang.png) center no-repeat;
+    display: none;
+}
+.contain .top-map .tm-info {
+    /*height: 700px;*/
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.contain .top-map .tm-info .info-total {
+    margin-left: 25px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.contain .top-map .tm-info .info-total span {
+    font-size: 18px;
+}
+
+.contain .top-map .tm-info .info-each {
+    margin-left: 25px;
+    padding: 16px 0 18px 0;
+    border-top: 1px solid #46515e;
+}
+
+.contain .top-map .tm-info .info-each h3 {
+    color: #ffffff;
+    font-size: 16px;
+    text-indent: 32px;
+    margin-bottom: 12px;
+}
+
+.contain .top-map .tm-info .info-e-1 h3 {
+    background: url(../images/info-icon-1.png) left center no-repeat;
+}
+
+.contain .top-map .tm-info .info-e-2 h3 {
+    background: url(../images/info-icon-2.png) left center no-repeat;
+}
+
+.contain .top-map .tm-info .info-e-3 h3 {
+    background: url(../images/info-icon-3.png) left center no-repeat;
+}
+
+.contain .top-map .tm-info .info-e-4 h3 {
+    background: url(../images/info-icon-4.png) left center no-repeat;
+}
+
+.contain .top-map .tm-info .info-each p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.contain .tm-bottom {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.contain .tm-bottom .tmb-nei {
+    height: 100%;
+    border-left: 1px solid #5d7182;
+    border-right: 1px solid #5d7182;
+}
+
+.contain .tm-bottom .tmb-nei a {
+    width: 16.6%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    border-left: 1px solid #5d7182;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.contain .tm-bottom .tmb-nei a:nth-of-type(1) {
+    border-left: none;
+}
+
+.mid-charts .echarts {
+    margin: 0 auto 50px;
+}
+
+.mid-charts .mid-mod {
+
+}
+
+.mid-charts .mid-mod .mm-title {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.mid-charts .mid-mod .mid-each {
+    width: 48%;
+    float: left;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.mid-charts .mid-mod .mid-each:nth-of-type(even) {
+    float: right;
+}
+
+.mid-charts .mid-mod .me-title {
+    width: 100%;
+    height: 64px;
+    background-color: #2b4259;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    line-height: 64px;
+    color: #ffffff;
+    font-size: 18px;
+}
