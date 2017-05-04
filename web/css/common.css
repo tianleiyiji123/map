@@ -66,10 +66,6 @@ a, a:hover, a:active, a:visited {
     height: 10px;
 }
 
-.clear{
-    clear: both;
-}
-
 /*主要样式*/
 .contain {
     width: 100%;
@@ -256,7 +252,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .mid-charts .echarts {
-    margin: 0 auto 15px;
+    margin: 0 auto 50px;
 }
 
 .mid-charts .mid-mod {
@@ -279,8 +275,7 @@ a, a:hover, a:active, a:visited {
     background-color: #ffffff;
     margin-bottom: 20px;
 }
-.mid-charts .mid-mod .mid-each2{
-}
+
 .mid-charts .mid-mod .mid-each:nth-of-type(even) {
     float: right;
 }
@@ -297,24 +292,4 @@ a, a:hover, a:active, a:visited {
     line-height: 64px;
     color: #ffffff;
     font-size: 18px;
-}
-
-
-
-/*ECharts_08*/
-.ECharts_08{
-    position: relative;
-    width: 1200px; height: 453px;
-    overflow: hidden;
-}
-.ECharts_08  .img_01{
-    position: absolute;
-    left:15px;
-    bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.56);
-}
-.ECharts_08  .img_02{
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
 }

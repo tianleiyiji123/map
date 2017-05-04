@@ -18,7 +18,7 @@ var ECharts_03_option = {
         backgroundColor: 'rgba(255,255,255,1)',
         padding: [5, 10],
         textStyle: {
-            color: '#7588E4',
+            color: '#7588E4'
         },
         extraCssText: 'box-shadow: 0 0 5px rgba(0,0,0,0.3)'
     },
@@ -29,41 +29,74 @@ var ECharts_03_option = {
     },
     xAxis: {
         type: 'category',
-        data: ['商业服务业', '批发业', '房地产', '电气机械及器材制造业', '电力热力生产与供应业'],
+        // data: ['', '商业服务业', '批发业', '房地产', '电气机械及器材制造业', '电力热力生产与供应业'],
+        data: [
+            {
+                value: ""
+            },
+            {
+                value: "商业服务业"
+            },
+            {
+                value: "批发业"
+            },
+            {
+                value: "房地产"
+            },
+            {
+                value: "电气机械及器材制造业"
+            },
+            {
+                value: "电力热力生产与供应业"
+            },
+        ],
         boundaryGap: false,
+        nameLocation: "middle",
+        nameRotate: 45,
         splitLine: {
-            show: true,
-            interval: 'auto',
+            show: false,
+            // interval: 'auto',
             lineStyle: {
                 color: ['#D4DFF5']
             }
         },
         axisTick: {
-            show: false
+            show: false,
+            interval: 0,
         },
         axisLine: {
+            show: false,
+            onZero: false,
             lineStyle: {
                 color: '#609ee9'
             }
         },
         axisLabel: {
             margin: 10,
+            rotate: 20,
+            interval: 0,
             textStyle: {
-                fontSize: 12
+                fontSize: 12,
+                color: '#000000'
             }
+        },
+        axisPointer: {
+            show: true
         }
     },
-    yAxis: {
+    yAxis: [{
         type: 'value',
+        min: 0,
         splitLine: {
             lineStyle: {
-                color: ['#D4DFF5']
+                color: ['#e6e6e6']
             }
         },
         axisTick: {
             show: false
         },
         axisLine: {
+            show: false,
             lineStyle: {
                 color: '#609ee9'
             }
@@ -71,22 +104,50 @@ var ECharts_03_option = {
         axisLabel: {
             margin: 10,
             textStyle: {
-                fontSize: 14
+                fontSize: 14,
+                color: "#b3b3b3"
             }
         }
     },
+        //辅助y轴
+        {
+            type: 'value',
+            min: 0,
+            max: 120,
+            splitLine: {
+                lineStyle: {
+                    color: ['#e6e6e6']
+                }
+            },
+            axisTick: {
+                show: false
+            },
+            axisLine: {
+                show: false,
+                lineStyle: {
+                    color: '#609ee9'
+                }
+            },
+            axisLabel: {
+                margin: 10,
+                textStyle: {
+                    fontSize: 14,
+                    color: "#b3b3b3"
+                }
+            }
+        }],
     series: [{
         name: '项目数(单位"个")',
         type: 'line',
         smooth: false,
-        showSymbol: false,
+        showSymbol: true,
         symbol: 'rect',
         symbolSize: 10,
-        data: ['577', '1087', '118', '75', '64'],
+        data: ['0', '577', '1087', '118', '75', '64'],
         label: {
             normal: {
                 show: true,
-                position: "top"
+                position: "bottom"
             }
         },
         areaStyle: {
@@ -102,7 +163,7 @@ var ECharts_03_option = {
         },
         itemStyle: {
             normal: {
-                color: '#90caec'
+                color: '#96cced'
             }
         },
         lineStyle: {
@@ -118,7 +179,7 @@ var ECharts_03_option = {
         showSymbol: true,
         symbol: 'circle',
         symbolSize: 10,
-        data: ['94.7', '78.0', '39.9', '15.9', '15.8'],
+        data: ['0', '94.7', '78.0', '39.9', '15.9', '15.8'],
         areaStyle: {
             normal: {
                 color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -130,9 +191,15 @@ var ECharts_03_option = {
                 }], false)
             }
         },
+        label: {
+            normal: {
+                show: true,
+                position: "top"
+            }
+        },
         itemStyle: {
             normal: {
-                color: '#90caec'
+                color: '#e28f84'
             }
         },
         lineStyle: {

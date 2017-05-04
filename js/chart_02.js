@@ -6,13 +6,12 @@ var ECharts_02_option = {
     title: {
         subtext: '投资项目数量',
         textAlign: "left",
-        bottom: 0,
+        bottom: "2%",
         textStyle: {
             color: "#000000",
             fontSize: 14
         },
         left: "40%",
-        bottom: 20
 
     },
     tooltip: {
@@ -24,6 +23,29 @@ var ECharts_02_option = {
             return params[0].value + "个";
         }
     },
+    grid: [
+        {
+            show: true,
+            top: 0,
+            width: '100%',
+            height: "100%",
+            bottom: '20%',
+            left: 'center',
+            containLabel: true,
+            backgroundColor: "#f5f5f5",
+            borderWidth: 0
+        }, {
+            show: true,
+            top: 0,
+            width: '100%',
+            height: "100%",
+            bottom: '20%',
+            left: 'center',
+            containLabel: true,
+            backgroundColor: "#f5f5f5",
+            borderWidth: 0
+        }
+    ],
     backgroundColor: "#f5f5f5",
     xAxis: {
         show: false
@@ -68,7 +90,6 @@ var ECharts_02_option = {
         axisLine: {show: false},
         axisLabel: {
             interval: 0,
-            rotate:45
 
         },
         splitArea: {

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="less/public.css" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script>
+        (function (win, doc) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(window, document);
+        $(function () {
+            var h = $(".of-charts").height();
+            var lh = $(".echarts").css("height", h * 0.96);
+        });
+
+    </script>
+</head>
+<body>
+<div class="contain">
+    <div class="top-map">
+        <div id="ECharts_00" style="width: 100%;"></div>
+        <div class="tm-title">
+            <a class="tmt-logo"></a>
+            <div class="tmt-time">
+                <a class="tmt-name">2012</a>
+                <select name="" class="tmt-select">
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                </select>
+            </div>
+        </div>
+        <!--<div class="tm-info inside">-->
+        <!--<div class="tmi-position">-->
+        <!--<div class="tmi-hh-nei" id="J-info">-->
+        <!--<div class="info-total">-->
+        <!--国家（地区）<span>128</span>个｜行业 <span>78</span> 个｜项目<span>3673</span>个-->
+        <!--总额<span>428.84</span>亿美元-->
+        <!--</div>-->
+        <!--<div class="info-each info-e-1">-->
+        <!--<h3>投资项目数前三 （单位：个）</h3>-->
+        <!--<p>香港 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 991</p>-->
+        <!--<p>美国 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 691</p>-->
+        <!--<p>日本 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 129</p>-->
+        <!--</div>-->
+        <!--<div class="info-each info-e-2">-->
+        <!--<h3>金额数前三 （单位：亿美元）</h3>-->
+        <!--<p>香港 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;-->
+        <!--152.6496</p>-->
+        <!--<p>美国 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;-->
+        <!--45.0730</p>-->
+        <!--<p>澳大利亚 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 27.4099</p>-->
+        <!--</div>-->
+        <!--<div class="info-each info-e-3">-->
+        <!--<h3>行业项目前三 （单位：个）</h3>-->
+        <!--<p>批发业 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 1087</p>-->
+        <!--<p>商业服务业 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 577</p>-->
+        <!--<p>房地产 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 118</p>-->
+        <!--</div>-->
+        <!--<div class="info-each info-e-4">-->
+        <!--<h3>行业投资总额前三 （单位：亿美元）</h3>-->
+        <!--<p>商业服务业 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 94.7146</p>-->
+        <!--<p>批发业 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 78.0357</p>-->
+        <!--<p>房地产 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 39.933</p>-->
+        <!--</div>-->
+        <!--<a class="info-shou" id="shou"></a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<a class="info-fang" id="fang"></a>-->
+
+        <!--</div>-->
+    </div>
+    <div class="mid-charts">
+        <div class="mid-mod">
+            <h3 class="mm-title"><img src="images/web-title-1.png" alt=""></h3>
+            <div class="mid-each">
+                <div class="me-title">2012年至今,江苏对外投资额最高的国家（地区）：香港</div>
+                <!--echart-1-->
+                <div class="of-charts">
+                    <div id="ECharts_01" class="echarts"></div>
+                </div>
+
+            </div>
+            <div class="mid-each">
+                <div class="me-title">2012至今,江苏对外投资项目最多的国家（地区）：香港</div>
+                <!--echart-2-->
+                <div class="of-charts">
+                    <div id="ECharts_02" class="echarts"></div>
+                </div>
+
+            </div>
+            <div class="mid-each">
+                <div class="me-title">2012至今,江苏对外投资最集中的行业：商业服务业</div>
+                <!--echart-3-->
+                <div class="of-charts">
+                    <div id="ECharts_03" class="echarts"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/chart_00.js"></script>
+<script type="text/javascript" src="js/chart_01.js"></script>
+<script type="text/javascript" src="js/chart_02.js"></script>
+<script type="text/javascript" src="js/chart_03.js"></script>
+</html>

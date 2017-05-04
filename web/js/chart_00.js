@@ -2,8 +2,10 @@
  * Created by Lwang on 2017-04-28.
  * 地图
  */
-/*var latlong = {};
-
+var latlong = {};
+//    设置背景图片
+var imgBgDom = new Image();
+imgBgDom.src = "images/map-bg.jpg";
 latlong.AD = {'latitude': 42.5, 'longitude': 1.5};
 latlong.AE = {'latitude': 24, 'longitude': 54};
 latlong.AF = {'latitude': 33, 'longitude': 65};
@@ -243,11 +245,7 @@ latlong.YE = {'latitude': 15, 'longitude': 48};
 latlong.YT = {'latitude': -12.8333, 'longitude': 45.1667};
 latlong.ZA = {'latitude': -29, 'longitude': 24};
 latlong.ZM = {'latitude': -15, 'longitude': 30};
-latlong.ZW = {'latitude': -20, 'longitude': 30};*/
-
-//    设置背景图片
-var imgBgDom = new Image();
-imgBgDom.src = "images/map-bg.jpg";
+latlong.ZW = {'latitude': -20, 'longitude': 30};
 var mapData = [
     {'code': 'AF', 'name': 'Afghanistan', 'value': 32358260, 'color': '#eea638'},
     {'code': 'AL', 'name': 'Albania', 'value': 3215988, 'color': '#d8854f'},
@@ -430,10 +428,10 @@ mapData.forEach(function (itemOpt) {
 });
 
 var ECharts_00_option = {
-    backgroundColor: {
-        image: imgBgDom, // 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串
-        repeat: 'no-repeat' // 是否平铺, 可以是 'repeat-x', 'repeat-y', 'no-repeat'
-    },
+    // backgroundColor: {
+    //     image: imgBgDom, // 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串
+    //     repeat: 'no-repeat' // 是否平铺, 可以是 'repeat-x', 'repeat-y', 'no-repeat'
+    // },
     title: {
         // text: 'World Population (2011)',
         // subtext: 'From Gapminder',
@@ -446,11 +444,11 @@ var ECharts_00_option = {
     tooltip: {
         trigger: 'item',
         formatter: function (params) {
-            console.log(params)
+            console.log(params);
             var value = (params.value + '').split('.');
             value = value[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,')
                 + '.' + value[1];
-            return params.seriesName + '<br/>' + params.name + ' : ' + value;
+            return params.seriesName + '<br/>' + params.name ;
         }
     },
     visualMap: {
@@ -470,6 +468,7 @@ var ECharts_00_option = {
         map: 'world',
         roam: true,
         aspectScale: 1,
+        zoom: 1.2,
         scaleLimit: {
             min: 0.5,
             max: 2
