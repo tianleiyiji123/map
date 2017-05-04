@@ -299,8 +299,51 @@ a, a:hover, a:active, a:visited {
     font-size: 18px;
 }
 
+/*ECharts_07*/
+.ECharts_07 {
+    position: relative;
+}
 
+.ECharts_07 .img_01 {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
 
+.ECharts_07 .img_02 {
+    position: absolute;
+    left: 43px;
+    top: 73px;
+}
+
+.ECharts_07 .img_03 {
+    position: absolute;
+    right: 45px;
+    bottom: 25px;
+}
+
+.ECharts_07 .img_04 {
+    position: absolute;
+    left: 402px;
+    top: -19px;
+}
+
+.ECharts_07 .persons {
+    position: absolute;
+    z-index: 3;
+    left: 180px;
+    top: 90px;
+    width: 270px;
+    height: 220px;
+    background: url("../images/chart_07_img_05.png") no-repeat center;
+}
+
+.ECharts_07 .person {
+    position: absolute;
+    color: #CD235C;
+    width: 16px;
+    height: 40px
+}
 /*ECharts_08*/
 .ECharts_08{
     position: relative;
