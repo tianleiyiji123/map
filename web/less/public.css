@@ -296,9 +296,11 @@ a:visited {
 }
 .contain .mid-charts .mid-mod .mid-each .of-charts {
   width: 100%;
-  height: 12.8rem;
+  min-height: 12.8rem;
+  overflow: hidden;
 }
 .contain .mid-charts .mid-mod .mid-each .echarts {
   width: 96% !important;
+  height: 100%;
   margin: 0 auto;
 }

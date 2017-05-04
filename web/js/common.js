@@ -21,4 +21,11 @@ $(function () {
             $("#shou").css("display", "block");
         })
     })
+
+
+
+    /*监听宽度*/
+    console.log("111")
+    console.log()
+
 });
