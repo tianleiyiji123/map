@@ -300,7 +300,25 @@ a:visited {
   overflow: hidden;
 }
 .contain .mid-charts .mid-mod .mid-each .echarts {
-  width: 96% !important;
-  height: 100%;
+  width: 96%;
   margin: 0 auto;
 }
+
+#ECharts_04{
+  width: 96%;
+  height: 24rem;
+  margin: 0 auto;
+}
+#ECharts_06{
+  width: 96%;
+  height: 44rem;
+  margin: 0 auto;
+}
+
+#ECharts_08{
+  width: 96%;
+  height: 24rem;
+  margin: 0 auto;
+}
+
+
