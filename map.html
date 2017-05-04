@@ -77,17 +77,17 @@
                 <div class="mid-each">
                     <div class="me-title">2012年至今,江苏对外投资额最高的国家（地区）：香港</div>
                     <!--echart-1-->
-                    <div id="ECharts_01" style="width: 550px;height: 360px;" class="echarts"></div>
+                    <div id="ECharts_01" style="width: 550px;height: 360px;" class="echarts" data-lazy-path="js/chart_01.js"></div>
                 </div>
                 <div class="mid-each">
                     <div class="me-title">2012至今,江苏对外投资项目最多的国家（地区）：香港</div>
                     <!--echart-2-->
-                    <div id="ECharts_02" style="width: 550px;height: 360px;padding: 0 30px" class="echarts"></div>
+                    <div id="ECharts_02" style="width: 550px;height: 360px;padding: 0 30px" class="echarts" data-lazy-path="js/chart_02.js"></div>
                 </div>
                 <div class="mid-each">
                     <div class="me-title">2012至今,江苏对外投资最集中的行业：商业服务业</div>
                     <!--echart-2-->
-                    <div id="ECharts_03" style="width: 550px;height: 360px;padding: 0 30px" class="echarts"></div>
+                    <div id="ECharts_03" style="width: 550px;height: 360px;padding: 0 30px" class="echarts" data-lazy-path="js/chart_03.js"></div>
                 </div>
                 <div class="mid-each">
                     <div class="me-title">2012至今,江苏对外投资最集中的行业：商业服务业</div>
@@ -96,13 +96,13 @@
                 </div>
 
 
-                <div class="mid-each">
+                <div class="mid-each" >
                     <div class="me-title">亮点一：对外投资规模屡创新高</div>
-                    <div id="ECharts_06" style="width: 590px;height: 756px;" class="echarts"></div>
+                    <div id="ECharts_06" style="width: 590px;height: 756px;" class="echarts" data-lazy-path="js/chart_06.js"></div>
                 </div>
-                <div class="mid-each">
+                <div class="mid-each" >
                     <div class="me-title">亮点一：对外投资规模屡创新高7</div>
-                    <div class="ECharts_07" id="ECharts_07" style="width: 576px; height: 335px;">
+                    <div class="ECharts_07" id="ECharts_07" style="width: 576px; height: 335px;" data-lazy-path="js/chart_07.js">
 
                         <div class="persons">
                         </div>
@@ -113,10 +113,10 @@
                     </div>
                 </div>
 
-                <div class="mid-each2 clear">
+                <div class="mid-each2 clear" >
                     <div class="me-title">亮点四：“一带一路”建设积极推进</div>
                     <div class="ECharts_08">
-                        <div id="ECharts_08" style="width: 1200px; height: 453px;"></div>
+                        <div id="ECharts_08" style="width: 1200px; height: 453px;" data-lazy-path="js/chart_08.js"></div>
                         <img class="img_01" src="images/chart_08_img_01.png">
                         <img class="img_02" src="images/chart_08_img_02.png">
                     </div>
@@ -130,13 +130,35 @@
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/lazyload.js"></script>
 <script type="text/javascript" src="js/latlong.js"></script>
 <script type="text/javascript" src="js/echarts.min.js"></script>
 <script type="text/javascript" src="js/chart_00.js"></script>
-<script type="text/javascript" src="js/chart_01.js"></script>
+<!--<script type="text/javascript" src="js/chart_01.js"></script>
 <script type="text/javascript" src="js/chart_02.js"></script>
-<script type="text/javascript" src="js/chart_03.js"></script>
-<script type="text/javascript" src="js/chart_07.js"></script>
-<script type="text/javascript" src="js/chart_06.js"></script>
-<script type="text/javascript" src="js/chart_08.js"></script>
+<script type="text/javascript" src="js/chart_03.js"></script>-->
+<!--<script type="text/javascript" src="js/chart_06.js"></script>-->
+<!--<script type="text/javascript" src="js/chart_07.js"></script>-->
+<!--<script type="text/javascript" src="js/chart_08.js"></script>-->
+<script>
+    $("#ECharts_01").lazyload({
+        type:"js"
+    })
+    $("#ECharts_02").lazyload({
+        type:"js"
+    })
+    $("#ECharts_03").lazyload({
+        type:"js"
+    })
+
+    $("#ECharts_06").lazyload({
+        type:"js"
+    })
+    $("#ECharts_07").lazyload({
+        type:"js"
+    })
+    $("#ECharts_08").lazyload({
+        type:"js"
+    })
+</script>
 </html>
