@@ -66,7 +66,7 @@ a, a:hover, a:active, a:visited {
     height: 10px;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
@@ -140,7 +140,8 @@ a, a:hover, a:active, a:visited {
     left: 0;
 
 }
-.contain .top-map .tmi-hh-nei{
+
+.contain .top-map .tmi-hh-nei {
 
     width: 350px;
     height: 700px;
@@ -160,7 +161,8 @@ a, a:hover, a:active, a:visited {
     margin-top: -50px;
     background: url(../images/shou.png) center no-repeat;
 }
-.contain .top-map .info-fang{
+
+.contain .top-map .info-fang {
     width: 40px;
     height: 100px;
     position: absolute;
@@ -170,6 +172,7 @@ a, a:hover, a:active, a:visited {
     background: url(../images/fang.png) center no-repeat;
     display: none;
 }
+
 .contain .top-map .tm-info {
     /*height: 700px;*/
     position: absolute;
@@ -239,6 +242,10 @@ a, a:hover, a:active, a:visited {
     border-right: 1px solid #5d7182;
 }
 
+.contain .tm-bottom .tmb-nei a.active {
+    color: #f4524d;
+}
+
 .contain .tm-bottom .tmb-nei a {
     width: 16.6%;
     height: 50px;
@@ -249,6 +256,7 @@ a, a:hover, a:active, a:visited {
     border-left: 1px solid #5d7182;
     margin-top: 12px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .contain .tm-bottom .tmb-nei a:nth-of-type(1) {
@@ -261,6 +269,10 @@ a, a:hover, a:active, a:visited {
 
 .mid-charts .mid-mod {
 
+}
+
+.mid-charts .mid-bottom {
+    margin: 30px 0;
 }
 
 .mid-charts .mid-mod .mm-title {
@@ -279,8 +291,10 @@ a, a:hover, a:active, a:visited {
     background-color: #ffffff;
     margin-bottom: 20px;
 }
-.mid-charts .mid-mod .mid-each2{
+
+.mid-charts .mid-mod .mid-each2 {
 }
+
 .mid-charts .mid-mod .mid-each:nth-of-type(even) {
     float: right;
 }
@@ -297,6 +311,26 @@ a, a:hover, a:active, a:visited {
     line-height: 64px;
     color: #ffffff;
     font-size: 18px;
+}
+
+.bottom {
+    margin-top: 50px;
+    position: relative;
+}
+
+.bottom img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#jTop {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 18%;
+    right: 20px;
+    cursor: pointer;
 }
 
 /*ECharts_07*/
@@ -344,19 +378,23 @@ a, a:hover, a:active, a:visited {
     width: 16px;
     height: 40px
 }
+
 /*ECharts_08*/
-.ECharts_08{
+.ECharts_08 {
     position: relative;
-    width: 1200px; height: 453px;
+    width: 1200px;
+    height: 453px;
     overflow: hidden;
 }
-.ECharts_08  .img_01{
+
+.ECharts_08 .img_01 {
     position: absolute;
-    left:15px;
+    left: 15px;
     bottom: 15px;
     background-color: rgba(255, 255, 255, 0.56);
 }
-.ECharts_08  .img_02{
+
+.ECharts_08 .img_02 {
     position: absolute;
     right: 15px;
     bottom: 15px;

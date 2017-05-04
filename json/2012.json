@@ -1,6 +1,6 @@
 [
   {
-    " country": "美国",
+    "country": "美国",
     "longitude": -74.00594130000002,
     "latitude": 40.7127837,
     "industry": "电热生产供应 批发 住宿 ",
@@ -8,7 +8,7 @@
     "num": 90
   },
   {
-    " country": "澳大利亚",
+    "country": "澳大利亚",
     "longitude": 149.13000920000002,
     "latitude": -35.2809368,
     "industry": "房地产 商业服务 农业 ",
@@ -16,7 +16,7 @@
     "num": 16
   },
   {
-    " country": "中国香港",
+    "country": "中国香港",
     "longitude": 114.10949700000003,
     "latitude": 22.396428,
     "industry": "商业服务 批发 通用设备制造 ",
@@ -24,23 +24,23 @@
     "num": 137
   },
   {
-    " country": "中国台湾",
+    "country": "中国台湾",
     "longitude": 121.07937049999998,
     "latitude": 23.9036873,
-    "industry": "-",
+    "industry": "",
     "money": 0.0928,
     "num": 9
   },
   {
-    " country": "越南",
+    "country": "越南",
     "longitude": 105.83415979999995,
     "latitude": 21.0277644,
-    "industry": "-",
+    "industry": "",
     "money": 0.3826,
     "num": 5
   },
   {
-    " country": "德国",
+    "country": "德国",
     "longitude": 13.404953999999975,
     "latitude": 52.52000659999999,
     "industry": "批发业 专用设备制造 电力热力生产与供应 ",
@@ -48,199 +48,199 @@
     "num": 23
   },
   {
-    " country": "阿尔及利亚",
+    "country": "阿尔及利亚",
     "longitude": 3.0587560999999823,
     "latitude": 36.753768,
-    "industry": "-",
+    "industry": "",
     "money": 0.01,
     "num": 1
   },
   {
-    " country": "阿拉伯联合酋长国 ",
+    "country": "阿拉伯联合酋长国 ",
     "longitude": 54.37734380000006,
     "latitude": 24.453884,
-    "industry": "-",
+    "industry": "",
     "money": 0.2276,
     "num": 6
   },
   {
-    " country": "埃及 ",
+    "country": "埃及 ",
     "longitude": 31.23571160000006,
     "latitude": 30.0444196,
-    "industry": "-",
+    "industry": "",
     "money": 0.098,
     "num": 1
   },
   {
-    " country": "埃塞俄比亚 ",
+    "country": "埃塞俄比亚 ",
     "longitude": 38.75776050000002,
     "latitude": 8.9806034,
-    "industry": "-",
+    "industry": "",
     "money": 0.025,
     "num": 2
   },
   {
-    " country": "安哥拉 ",
+    "country": "安哥拉 ",
     "longitude": 13.289436799999976,
     "latitude": -8.839987599999999,
-    "industry": "-",
+    "industry": "",
     "money": 0.0075,
     "num": 2
   },
   {
-    " country": "奥地利",
+    "country": "奥地利",
     "longitude": 16.37381890000006,
     "latitude": 48.2081743,
-    "industry": "-",
+    "industry": "",
     "money": 0.00005,
     "num": 1
   },
   {
-    " country": "巴西",
+    "country": "巴西",
     "longitude": -47.88252890000001,
     "latitude": -15.7941569,
-    "industry": "-",
+    "industry": "",
     "money": 0.0821,
     "num": 3
   },
   {
-    " country": "白俄罗斯 ",
+    "country": "白俄罗斯 ",
     "longitude": 27.561524400000053,
     "latitude": 53.90453979999999,
-    "industry": "-",
+    "industry": "",
     "money": 0.0832,
     "num": 2
   },
   {
-    " country": "保加利亚",
+    "country": "保加利亚",
     "longitude": 113.13743299999999,
     "latitude": 23.047807,
-    "industry": "-",
+    "industry": "",
     "money": 0.024,
     "num": 1
   },
   {
-    " country": "贝宁 ",
+    "country": "贝宁 ",
     "longitude": 2.6288523000000623,
     "latitude": 6.4968574,
-    "industry": "-",
+    "industry": "",
     "money": 0,
     "num": 1
   },
   {
-    " country": "比利时 ",
+    "country": "比利时 ",
     "longitude": 4.351710300000036,
     "latitude": 50.8503396,
-    "industry": "-",
+    "industry": "",
     "money": 0.053,
     "num": 2
   },
   {
-    " country": "波兰 ",
+    "country": "波兰 ",
     "longitude": 21.012228700000037,
     "latitude": 52.2296756,
-    "industry": "-",
+    "industry": "",
     "money": 0.1169,
     "num": 3
   },
   {
-    " country": "玻利维亚 ",
+    "country": "玻利维亚 ",
     "longitude": -65.26196149999998,
     "latitude": -19.0195852,
-    "industry": "-",
+    "industry": "",
     "money": 0.06,
     "num": 2
   },
   {
-    " country": "伯利兹 ",
+    "country": "伯利兹 ",
     "longitude": -88.75902009999999,
     "latitude": 17.2510114,
-    "industry": "-",
+    "industry": "",
     "money": 0.0035,
     "num": 1
   },
   {
-    " country": "赤道几内亚 ",
+    "country": "赤道几内亚 ",
     "longitude": 8.737103899999966,
     "latitude": 3.7504118,
-    "industry": "-",
+    "industry": "",
     "money": 0.0788,
     "num": 1
   },
   {
-    " country": "丹麦 ",
+    "country": "丹麦 ",
     "longitude": 12.568337100000008,
     "latitude": 55.6760968,
-    "industry": "-",
+    "industry": "",
     "money": 0.0013,
     "num": 1
   },
   {
-    " country": "俄罗斯联邦 ",
+    "country": "俄罗斯联邦 ",
     "longitude": 37.6173,
     "latitude": 55.755826,
-    "industry": "-",
+    "industry": "",
     "money": 0.0775,
     "num": 5
   },
   {
-    " country": "法国 ",
+    "country": "法国 ",
     "longitude": 2.3522219000000177,
     "latitude": 48.856614,
-    "industry": "-",
+    "industry": "",
     "money": 0.165,
     "num": 5
   },
   {
-    " country": "菲律宾 ",
+    "country": "菲律宾 ",
     "longitude": 120.9842195,
     "latitude": 14.5995124,
-    "industry": "-",
+    "industry": "",
     "money": 0.12,
     "num": 3
   },
   {
-    " country": "哥伦比亚 ",
+    "country": "哥伦比亚 ",
     "longitude": -74.072092,
     "latitude": 4.710988599999999,
-    "industry": "-",
+    "industry": "",
     "money": 0.07,
     "num": 1
   },
   {
-    " country": "圭亚那 ",
+    "country": "圭亚那 ",
     "longitude": -52.022315404687504,
     "latitude": 5.365573150339372,
-    "industry": "-",
+    "industry": "",
     "money": 0,
     "num": 1
   },
   {
-    " country": "哈萨克斯坦 ",
+    "country": "哈萨克斯坦 ",
     "longitude": 71.4703558,
     "latitude": 51.16052269999999,
-    "industry": "-",
+    "industry": "",
     "money": 0.002,
     "num": 1
   },
   {
-    " country": "韩国 ",
+    "country": "韩国 ",
     "longitude": 126.97796919999996,
     "latitude": 37.566535,
-    "industry": "-",
+    "industry": "",
     "money": 0.9072,
     "num": 11
   },
   {
-    " country": "荷兰",
+    "country": "荷兰",
     "longitude": 4.895167899999933,
     "latitude": 52.3702157,
-    "industry": "-",
+    "industry": "",
     "money": 0.251,
     "num": 11
   },
   {
-    " country": "加拿大 ",
+    "country": "加拿大 ",
     "longitude": -75.69719309999999,
     "latitude": 45.4215296,
     "industry": "林业 有色金属矿采选业 农业 ",
@@ -248,15 +248,15 @@
     "num": 12
   },
   {
-    " country": "加蓬 ",
+    "country": "加蓬 ",
     "longitude": 9.467267600000014,
     "latitude": 0.4161976,
-    "industry": "-",
+    "industry": "",
     "money": 0.0127,
     "num": 1
   },
   {
-    " country": "柬埔寨 ",
+    "country": "柬埔寨 ",
     "longitude": 104.89216680000004,
     "latitude": 11.5448729,
     "industry": "商务服务业 纺织服装、鞋、帽制造业 纺织业 ",
@@ -264,63 +264,63 @@
     "num": 16
   },
   {
-    " country": "捷克 ",
+    "country": "捷克 ",
     "longitude": 14.43780049999998,
     "latitude": 50.0755381,
-    "industry": "-",
+    "industry": "",
     "money": -0.035,
     "num": 1
   },
   {
-    " country": "津巴布韦 ",
+    "country": "津巴布韦 ",
     "longitude": 31.03350999999998,
     "latitude": -17.8251657,
-    "industry": "-",
+    "industry": "",
     "money": 0.35,
     "num": 1
   },
   {
-    " country": "喀麦隆",
+    "country": "喀麦隆",
     "longitude": 11.502075200000036,
     "latitude": 3.8480325,
-    "industry": "-",
+    "industry": "",
     "money": 0.1174,
     "num": 4
   },
   {
-    " country": "开曼群岛 ",
+    "country": "开曼群岛 ",
     "longitude": -81.36743890000002,
     "latitude": 19.2869323,
-    "industry": "-",
+    "industry": "",
     "money": 0.4834,
     "num": 9
   },
   {
-    " country": "肯尼亚 ",
+    "country": "肯尼亚 ",
     "longitude": 36.82194619999996,
     "latitude": -1.2920659,
-    "industry": "-",
+    "industry": "",
     "money": 0.0015,
     "num": 1
   },
   {
-    " country": "老挝 ",
+    "country": "老挝 ",
     "longitude": 102.63310350000006,
     "latitude": 17.9757058,
-    "industry": "-",
+    "industry": "",
     "money": 0.1,
     "num": 2
   },
   {
-    " country": "立陶宛 ",
+    "country": "立陶宛 ",
     "longitude": 25.279651400000034,
     "latitude": 54.6871555,
-    "industry": "-",
+    "industry": "",
     "money": 0,
     "num": 1
   },
   {
-    " country": "卢森堡 ",
+    "country": "卢森堡 ",
     "longitude": 6.131934600000022,
     "latitude": 49.61162100000001,
     "industry": "电力、热力的生产和供应业 商务服务业 ",
@@ -328,111 +328,111 @@
     "num": 5
   },
   {
-    " country": "马来西亚 ",
+    "country": "马来西亚 ",
     "longitude": 101.68685499999992,
     "latitude": 3.139003,
-    "industry": "-",
+    "industry": "",
     "money": 0.0395,
     "num": 4
   },
   {
-    " country": "马里 ",
+    "country": "马里 ",
     "longitude": -8.002889200000027,
     "latitude": 12.6392316,
-    "industry": "-",
+    "industry": "",
     "money": 0.288,
     "num": 6
   },
   {
-    " country": "毛里求斯 ",
+    "country": "毛里求斯 ",
     "longitude": 57.50122220000003,
     "latitude": -20.1608912,
-    "industry": "-",
+    "industry": "",
     "money": 0.2577,
     "num": 2
   },
   {
-    " country": "毛里塔尼亚 ",
+    "country": "毛里塔尼亚 ",
     "longitude": -15.958237199999985,
     "latitude": 18.0735299,
-    "industry": "-",
+    "industry": "",
     "money": 0.005,
     "num": 1
   },
   {
-    " country": "蒙古 ",
+    "country": "蒙古 ",
     "longitude": 106.90574390000006,
     "latitude": 47.88639879999999,
-    "industry": "-",
+    "industry": "",
     "money": 0.14,
     "num": 2
   },
   {
-    " country": "孟加拉国 ",
+    "country": "孟加拉国 ",
     "longitude": 90.41251809999994,
     "latitude": 23.810332,
-    "industry": "-",
+    "industry": "",
     "money": 0.1802,
     "num": 5
   },
   {
-    " country": "秘鲁 ",
+    "country": "秘鲁 ",
     "longitude": -77.042754,
     "latitude": -12.0463731,
-    "industry": "-",
+    "industry": "",
     "money": 0.98,
     "num": 1
   },
   {
-    " country": "缅甸 ",
+    "country": "缅甸 ",
     "longitude": 95.66652309531253,
     "latitude": 19.907988756393525,
-    "industry": "-",
+    "industry": "",
     "money": 0.056,
     "num": 4
   },
   {
-    " country": "民主刚果 ",
+    "country": "民主刚果 ",
     "longitude": 15.266293099999984,
     "latitude": -4.4419311,
-    "industry": "-",
+    "industry": "",
     "money": 0.122,
     "num": 1
   },
   {
-    " country": "墨西哥 ",
+    "country": "墨西哥 ",
     "longitude": -99.13320799999997,
     "latitude": 19.4326077,
-    "industry": "-",
+    "industry": "",
     "money": 0.3827,
     "num": 3
   },
   {
-    " country": "纳米比亚 ",
+    "country": "纳米比亚 ",
     "longitude": 17.0657549,
     "latitude": -22.5608807,
-    "industry": "-",
+    "industry": "",
     "money": 0.3,
     "num": 1
   },
   {
-    " country": "南非 ",
+    "country": "南非 ",
     "longitude": 28.392941699999938,
     "latitude": -25.6051205,
-    "industry": "-",
+    "industry": "",
     "money": 0.2662,
     "num": 6
   },
   {
-    " country": "尼泊尔 ",
+    "country": "尼泊尔 ",
     "longitude": 85.3239605,
     "latitude": 27.7172453,
-    "industry": "-",
+    "industry": "",
     "money": 0.1,
     "num": 1
   },
   {
-    " country": "尼日利亚 ",
+    "country": "尼日利亚 ",
     "longitude": 7.398574000000053,
     "latitude": 9.0764785,
     "industry": "电力、热力的生产和供应业 有色金属矿采选业 商务服务业 ",
@@ -440,119 +440,119 @@
     "num": 6
   },
   {
-    " country": "挪威 ",
+    "country": "挪威 ",
     "longitude": 10.752245399999993,
     "latitude": 59.9138688,
-    "industry": "-",
+    "industry": "",
     "money": 0.0001,
     "num": 1
   },
   {
-    " country": "日本 ",
+    "country": "日本 ",
     "longitude": 139.73199249999993,
     "latitude": 35.7090259,
-    "industry": "-",
+    "industry": "",
     "money": 0.3151,
     "num": 19
   },
   {
-    " country": "瑞典",
+    "country": "瑞典",
     "longitude": 18.068580800000063,
     "latitude": 59.32932349999999,
-    "industry": "-",
+    "industry": "",
     "money": 0.0035,
     "num": 1
   },
   {
-    " country": "瑞士 ",
+    "country": "瑞士 ",
     "longitude": 7.447446799999966,
     "latitude": 46.9479739,
-    "industry": "-",
+    "industry": "",
     "money": 0.115,
     "num": 2
   },
   {
-    " country": "萨摩亚 ",
+    "country": "萨摩亚 ",
     "longitude": -171.7513551,
     "latitude": -13.8506958,
-    "industry": "-",
+    "industry": "",
     "money": 0.1268,
     "num": 2
   },
   {
-    " country": "塞拉利昂 ",
+    "country": "塞拉利昂 ",
     "longitude": -13.231722499999933,
     "latitude": 8.4656765,
-    "industry": "-",
+    "industry": "",
     "money": 0.21,
     "num": 1
   },
   {
-    " country": "沙特阿拉伯 ",
+    "country": "沙特阿拉伯 ",
     "longitude": 46.67529569999999,
     "latitude": 24.7135517,
-    "industry": "-",
+    "industry": "",
     "money": 0.4106,
     "num": 6
   },
   {
-    " country": "斯洛伐克 ",
+    "country": "斯洛伐克 ",
     "longitude": 17.107747700000004,
     "latitude": 48.1485965,
-    "industry": "-",
+    "industry": "",
     "money": 0.012,
     "num": 1
   },
   {
-    " country": "泰国 ",
+    "country": "泰国 ",
     "longitude": 100.50176510000006,
     "latitude": 13.7563309,
-    "industry": "-",
+    "industry": "",
     "money": 0.5096,
     "num": 4
   },
   {
-    " country": "坦桑尼亚 ",
+    "country": "坦桑尼亚 ",
     "longitude": 35.75160690000007,
     "latitude": -6.162959000000001,
-    "industry": "-",
+    "industry": "",
     "money": 0.0988,
     "num": 1
   },
   {
-    " country": "土耳其 ",
+    "country": "土耳其 ",
     "longitude": 32.85974190000002,
     "latitude": 39.9333635,
-    "industry": "-",
+    "industry": "",
     "money": 0,
     "num": 1
   },
   {
-    " country": "乌干达",
+    "country": "乌干达",
     "longitude": 32.582519700000034,
     "latitude": 0.3475964,
-    "industry": "-",
+    "industry": "",
     "money": 0.05,
     "num": 2
   },
   {
-    " country": "乌克兰 ",
+    "country": "乌克兰 ",
     "longitude": 30.523400000000038,
     "latitude": 50.4501,
-    "industry": "-",
+    "industry": "",
     "money": 0.005,
     "num": 1
   },
   {
-    " country": "西班牙 ",
+    "country": "西班牙 ",
     "longitude": -3.7037901999999576,
     "latitude": 40.4167754,
-    "industry": "-",
+    "industry": "",
     "money": 0.0286,
     "num": 2
   },
   {
-    " country": "新加坡",
+    "country": "新加坡",
     "longitude": 103.81983600000001,
     "latitude": 1.352083,
     "industry": "批发 商业服务 水上运输",
@@ -560,39 +560,39 @@
     "num": 18
   },
   {
-    " country": "伊朗 ",
+    "country": "伊朗 ",
     "longitude": 51.388973599999986,
     "latitude": 35.6891975,
-    "industry": "-",
+    "industry": "",
     "money": 0.1151,
     "num": 3
   },
   {
-    " country": "以色列 ",
+    "country": "以色列 ",
     "longitude": 35.21370999999999,
     "latitude": 31.768319,
-    "industry": "-",
+    "industry": "",
     "money": 0.0026,
     "num": 1
   },
   {
-    " country": "意大利 ",
+    "country": "意大利 ",
     "longitude": 12.496365500000024,
     "latitude": 41.9027835,
-    "industry": "-",
+    "industry": "",
     "money": 0.39,
     "num": 4
   },
   {
-    " country": "印度 ",
+    "country": "印度 ",
     "longitude": 77.20902120000005,
     "latitude": 28.6139391,
-    "industry": "-",
+    "industry": "",
     "money": 0.3965,
     "num": 15
   },
   {
-    " country": "印度尼西亚 ",
+    "country": "印度尼西亚 ",
     "longitude": 106.82274499999994,
     "latitude": -6.1744651,
     "industry": "农林牧副渔 化学原料及化学品制造 有色金属矿选采",
@@ -600,15 +600,15 @@
     "num": 12
   },
   {
-    " country": "英国 ",
+    "country": "英国 ",
     "longitude": -0.12775829999998223,
     "latitude": 51.5073509,
-    "industry": "-",
+    "industry": "",
     "money": 0.3777,
     "num": 7
   },
   {
-    " country": "英属维尔京群岛 ",
+    "country": "英属维尔京群岛 ",
     "longitude": -64.6184657,
     "latitude": 18.4286115,
     "industry": "商业服务 工艺品及其他制造 通信、计算机及其他电子设备制造 ",
@@ -616,26 +616,26 @@
     "num": 10
   },
   {
-    " country": "赞比亚 ",
+    "country": "赞比亚 ",
     "longitude": 28.322816500000044,
     "latitude": -15.3875259,
-    "industry": "-",
+    "industry": "",
     "money": 0.8,
     "num": 1
   },
   {
-    " country": "智利 ",
+    "country": "智利 ",
     "longitude": -117.16108380000003,
     "latitude": 32.715738,
-    "industry": "-",
+    "industry": "",
     "money": 0.82,
     "num": 2
   },
   {
-    " country": "中国澳门 ",
+    "country": "中国澳门 ",
     "longitude": 113.54387300000008,
     "latitude": 22.198745,
-    "industry": "-",
+    "industry": "",
     "money": 0.0007,
     "num": 1
   }
