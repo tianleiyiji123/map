@@ -38,41 +38,27 @@ var ECharts_05_option = {
             borderWidth: 0
         }
     ],
+    legend: {
+        top:30,
+        itemGap:180,
+        data: [{
+            name:'项目数(单位"个")',
+            textStyle:{
+                color:"#6c6c6c"
+            }
+        }, {
+            name:'投资数(单位"亿美元")',
+            textStyle:{
+                color:"#6c6c6c"
+            }
+        }]
+    },
     xAxis: {
         show: true,
         position: "bottom",
         type: "category",
         nameLocation: "middle",
-        data: [{
-            value: "香港",
-            textStyle: {
-                color: '#4d4d4d'
-            }
-        },
-            {
-                value: "美国",
-                textStyle: {
-                    color: '#4d4d4d'
-                }
-            },
-            {
-                value: "澳大利亚",
-                textStyle: {
-                    color: '#4d4d4d'
-                }
-            },
-            {
-                value: "印度尼西亚",
-                textStyle: {
-                    color: '#4d4d4d'
-                }
-            },
-            {
-                value: "英属维尔金群岛",
-                textStyle: {
-                    color: '#4d4d4d'
-                }
-            }],
+        data: [],
         axisTick: {show: false},
         axisLine: {show: false},
         axisLabel: {
@@ -149,15 +135,20 @@ var ECharts_05_option = {
     }],
     backgroundColor: "#f5f5f5",
     series: [{
-        name: 'hill',
+        name: '项目数(单位"个")',
         type: 'pictorialBar',
+
         barCategoryGap: '-130%',
 //            symbol: 'path://M0,10 L10,10 L5,0 L0,10 z',
         symbol: 'path://M0,10 L10,10 C5.5,10 5.5,5 5,0 C4.5,5 4.5,10 0,10 z',
         label: {
             normal: {
                 show: true,
-                position: "top"
+                position: "insideBottom",
+                textStyle: {
+                    color: "#ffffff",
+                    fontSize: 14
+                }
             }
         },
         itemStyle: {
@@ -169,6 +160,7 @@ var ECharts_05_option = {
             }
         },
         data: [
+
             {
                 name: "香港",
                 value: 81,
@@ -188,29 +180,62 @@ var ECharts_05_option = {
                     }
                 }
             },
-            {
-                name: "澳大利亚",
-                value: 30.6,
-                itemStyle: {
-                    normal: {
-                        color: "#94dddd"
+            {},
+            {}, {}
+        ]
+    },
+        {
+            name:'投资数(单位"亿美元")',
+            type: 'pictorialBar',
+            yAxisIndex: 1,
+            barCategoryGap: '-130%',
+//            symbol: 'path://M0,10 L10,10 L5,0 L0,10 z',
+            symbol: 'path://M0,10 L10,10 C5.5,10 5.5,5 5,0 C4.5,5 4.5,10 0,10 z',
+            label: {
+                normal: {
+                    show: true,
+                    position: "insideBottom",
+                    textStyle: {
+                        color: "#ffffff",
+                        fontSize: 14
                     }
-
                 }
             },
-            {
-                name: "印度尼西亚",
-                value: 7.4,
-                itemStyle: {
-                    normal: {
-                        color: "#e69389"
+            itemStyle: {
+                normal: {
+                    opacity: 0.5
+                },
+                emphasis: {
+                    opacity: 1
+                }
+            },
+            data: [
+                {},
+                {},
+                {},
+                {
+                    name: "澳大利亚",
+                    value: 30.6,
+                    itemStyle: {
+                        normal: {
+                            color: "#94dddd"
+                        }
 
                     }
+                },
+                {
+                    name: "印度尼西亚",
+                    value: 7.4,
+                    itemStyle: {
+                        normal: {
+                            color: "#e69389"
+
+                        }
+                    }
                 }
-            }
-        ],
-        z: 10
-    }]
+            ],
+            z: 10
+        }]
 };
 var chart_05 = echarts.init(document.querySelector("#ECharts_05"));
 chart_05.setOption(ECharts_05_option);
