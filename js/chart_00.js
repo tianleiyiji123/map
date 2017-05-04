@@ -2,10 +2,8 @@
  * Created by Lwang on 2017-04-28.
  * 地图
  */
-var latlong = {};
-//    设置背景图片
-var imgBgDom = new Image();
-imgBgDom.src = "images/map-bg.jpg";
+/*var latlong = {};
+
 latlong.AD = {'latitude': 42.5, 'longitude': 1.5};
 latlong.AE = {'latitude': 24, 'longitude': 54};
 latlong.AF = {'latitude': 33, 'longitude': 65};
@@ -245,7 +243,11 @@ latlong.YE = {'latitude': 15, 'longitude': 48};
 latlong.YT = {'latitude': -12.8333, 'longitude': 45.1667};
 latlong.ZA = {'latitude': -29, 'longitude': 24};
 latlong.ZM = {'latitude': -15, 'longitude': 30};
-latlong.ZW = {'latitude': -20, 'longitude': 30};
+latlong.ZW = {'latitude': -20, 'longitude': 30};*/
+
+//    设置背景图片
+var imgBgDom = new Image();
+imgBgDom.src = "images/map-bg.jpg";
 var mapData = [
     {'code': 'AF', 'name': 'Afghanistan', 'value': 32358260, 'color': '#eea638'},
     {'code': 'AL', 'name': 'Albania', 'value': 3215988, 'color': '#d8854f'},
