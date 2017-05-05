@@ -235,5 +235,11 @@ $(function () {
     };
     var chart_03 = echarts.init(document.querySelector("#ECharts_03"));
     chart_03.setOption(ECharts_03_option);
+    $(window).resize(function () {
+
+        setTimeout(function () {
+            chart_03.resize();
+        }, 500)
+    })
 });
 

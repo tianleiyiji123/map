@@ -208,6 +208,12 @@ $(function () {
     };
     var chart_01 = echarts.init(document.querySelector("#ECharts_01"));
     chart_01.setOption(ECharts_01_option);
+    $(window).resize(function () {
+
+        setTimeout(function () {
+            chart_01.resize();
+        }, 500)
+    })
 });
 
 

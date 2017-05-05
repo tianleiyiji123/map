@@ -200,7 +200,7 @@ a:visited {
   height: 11.73333333rem;
   position: relative;
   background: url(../images/map-bg.jpg) center no-repeat;
-  background-size: 16rem 11.73333333rem;
+  background-size: contain;
 }
 .contain .top-map .tm-title {
   width: 100%;
@@ -296,11 +296,12 @@ a:visited {
 }
 .contain .mid-charts .mid-mod .mid-each .of-charts {
   width: 100%;
-  min-height: 12.8rem;
+  padding-bottom:0.4rem;
   overflow: hidden;
 }
 .contain .mid-charts .mid-mod .mid-each .echarts {
   width: 96%;
+  height: 14rem;
   margin: 0 auto;
 }
 

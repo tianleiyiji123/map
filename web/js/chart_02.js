@@ -282,4 +282,10 @@ $(function () {
         },]
     };
     chart_02.setOption(ECharts_02_option);
+    $(window).resize(function () {
+
+        setTimeout(function () {
+            chart_02.resize();
+        }, 500)
+    })
 })
