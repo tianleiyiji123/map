@@ -239,6 +239,16 @@ var ECharts_05_option = {
             z: 10
         }]
 };
-var chart_05 = echarts.init(document.querySelector("#ECharts_05"));
-chart_05.setOption(ECharts_05_option);
+
+$(function () {
+    var chart_05 = echarts.init(document.querySelector("#ECharts_05"));
+    chart_05.setOption(ECharts_05_option);
+    $(window).resize(function () {
+
+        setTimeout(function () {
+            chart_05.resize();
+        }, 500)
+    })
+})
+
 
