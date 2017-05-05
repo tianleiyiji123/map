@@ -14,13 +14,14 @@
         <div class="tm-title">
             <a class="tmt-logo"></a>
             <div class="tmt-time">
-                <a class="tmt-name">2012</a>
-                <select name="" class="tmt-select">
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
+                <a class="tmt-name">总览</a>
+                <select name="" class="tmt-select" id="selectYear">
+                    <option value="json/all.json">总览</option>
+                    <option value="json/2012.json">2012</option>
+                    <option value="json/2013.json">2013</option>
+                    <option value="json/2014.json">2014</option>
+                    <option value="json/2015.json">2015</option>
+                    <option value="json/2016.json">2016</option>
                 </select>
             </div>
         </div>
@@ -63,6 +64,10 @@
         <!--<a class="info-fang" id="fang"></a>-->
 
         <!--</div>-->
+
+        <div>
+
+        </div>
     </div>
     <div class="mid-charts">
         <div class="mid-mod">
@@ -92,28 +97,41 @@
 
             </div>
             <div class="mid-each">
-                <div class="me-title">2012至今,江苏对外投资最集中的行业：商业服务业44</div>
+                <div class="me-title">2012年至今,江苏对外投资额最高的项目：
+                    印尼科拿威有色金属冶炼及压延加工项目,投资额6.29亿美元；
+                </div>
                 <div class="of-charts">
                     <div id="ECharts_04" class="echarts"></div>
                 </div>
 
             </div>
+
+        </div>
+        <div class="mid-mod">
+            <h3 class="mm-title"><img src="images/web-title-2.png" alt=""></h3>
             <div class="mid-each">
-                <div class="me-title">2012至今,江苏对外投资最集中的行业：商业服务业66</div>
+                <div class="me-title">亮点一：对外投资规模屡创新高</div>
                 <div class="of-charts">
                     <div id="ECharts_06" class="echarts"></div>
                 </div>
-
             </div>
             <div class="mid-each">
-                <div class="me-title">2012至今,江苏对外投资最集中的行业：商业服务业88</div>
+                <div class="me-title">亮点二：海外并购占比显著提升</div>
+                <div class="of-charts">
+                    <div id="ECharts_05" class="echarts"></div>
+                </div>
+            </div>
+            <div class="mid-each">
+                <div class="me-title">亮点四：“一带一路”建设积极推进</div>
                 <div class="of-charts">
                     <div id="ECharts_08" class="echarts"></div>
                 </div>
 
             </div>
         </div>
-
+        <div class="mid-bottom">
+            <img src="images/web-lizhi.png" alt="">
+        </div>
     </div>
 </div>
 
@@ -135,7 +153,7 @@
     })(window, document);
     $(function () {
         var h = $(".of-charts").height();
-         $("#ECharts_01,#ECharts_02,#ECharts_03").css("height", h * 0.96);
+        $("#ECharts_01,#ECharts_02,#ECharts_03").css("height", h * 0.96);
     });
 
 </script>
@@ -147,6 +165,7 @@
 <script type="text/javascript" src="js/chart_02.js"></script>
 <script type="text/javascript" src="js/chart_03.js"></script>
 <script type="text/javascript" src="js/chart_04.js"></script>
+<script type="text/javascript" src="js/chart_05.js"></script>
 <script type="text/javascript" src="js/chart_06.js"></script>
 <script type="text/javascript" src="js/chart_08.js"></script>
 </html>

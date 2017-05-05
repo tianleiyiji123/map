@@ -1,11 +1,6 @@
-/**
- * Created by Lwang on 2017-04-28.
- * 地图
- */
-/*var latlong = {};*/
 //    设置背景图片
 var imgBgDom = new Image();
-
+imgBgDom.src = "images/map-bg.jpg";
 var mapData = [
     {'code': 'AF', 'name': 'Afghanistan', 'value': 32358260, 'color': '#eea638'},
     {'code': 'AL', 'name': 'Albania', 'value': 3215988, 'color': '#d8854f'},
@@ -178,57 +173,49 @@ var mapData = [
     {'code': 'ZW', 'name': 'Zimbabwe', 'value': 12754378, 'color': '#de4c4f'}];
 var max = -Infinity;
 var min = Infinity;
-mapData.forEach(function (itemOpt) {
-    if (itemOpt.value > max) {
-        max = itemOpt.value;
-    }
-    if (itemOpt.value < min) {
-        min = itemOpt.value;
-    }
-});
+// mapData.forEach(function (itemOpt) {
+//     if (itemOpt.value > max) {
+//         max = itemOpt.value;
+//     }
+//     if (itemOpt.value < min) {
+//         min = itemOpt.value;
+//     }
+// });
 
 var ECharts_00_option = {
-    // backgroundColor: {
-    //     image: imgBgDom, // 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串
-    //     repeat: 'no-repeat' // 是否平铺, 可以是 'repeat-x', 'repeat-y', 'no-repeat'
-    // },
+    backgroundColor: {
+        image: imgBgDom, // 支持为 HTMLImageElement, HTMLCanvasElement，不支持路径字符串
+        repeat: 'no-repeat' // 是否平铺, 可以是 'repeat-x', 'repeat-y', 'no-repeat'
+    },
     title: {
-        // text: 'World Population (2011)',
-        // subtext: 'From Gapminder',
-        // left: 'center',
-        // top: 'top',
         textStyle: {
             color: '#fff'
         }
     },
     tooltip: {
         trigger: 'item',
+        padding: 10,
         formatter: function (params) {
-            console.log(params);
-            var value = (params.value + '').split('.');
-            value = value[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,')
-                + '.' + value[1];
-            return params.seriesName + '<br/>' + params.name ;
+            return params.name + '<br/>' + '项目' + params.value[3] + '个&nbsp;&nbsp;|&nbsp;&nbsp;' + params.value[2] + '亿美元' + '<br/>' + '前三行业:' + (params.value[4] ? params.value[4] : '无');
         }
     },
-    visualMap: {
-        show: false,
-        min: 0,
-        max: max,
-        target: {
-            inRange: {
-                symbol: "circle",
-                symbolSize: [6, 30]
-            }
-        }
-    },
+    // visualMap: {
+    //     show: false,
+    //     min: 0,
+    //     max: 100,
+    //     target: {
+    //         inRange: {
+    //             symbol: "circle",
+    //             symbolSize: 20
+    //         }
+    //     }
+    // },
     geo: {
         name: 'World Population (2010)',
         type: 'map',
         map: 'world',
         roam: true,
         aspectScale: 1,
-        zoom: 1.2,
         scaleLimit: {
             min: 0.5,
             max: 2
@@ -256,35 +243,97 @@ var ECharts_00_option = {
         }
     ]
 };
-$.get("json/world.json", function (worldjson) {
+$(function () {
     var chart_00 = echarts.init(document.querySelector("#ECharts_00"));
-    echarts.registerMap('world', worldjson);
-    ECharts_00_option.series = [{
-        type: 'scatter',
-        coordinateSystem: 'geo',
-        hoverAnimation: true,
-        legendHoverLink: false,
-        data: mapData.map(function (itemOpt) {
-            return {
-                name: itemOpt.name,
-                value: [
-                    latlong[itemOpt.code].longitude,
-                    latlong[itemOpt.code].latitude,
-                    itemOpt.value
-                ],
-                label: {
-                    emphasis: {
-                        position: 'right',
-                        show: true
-                    }
-                },
-                itemStyle: {
-                    normal: {
-                        color: itemOpt.color
-                    }
-                }
-            };
-        })
-    }];
-    chart_00.setOption(ECharts_00_option);
-})
+
+    function ajaxDataCancle(url, worldjson, cb) {
+        $.get(url, function (alldata) {
+
+            echarts.registerMap('world', worldjson);
+            ECharts_00_option.series = [{
+                type: 'scatter',
+                coordinateSystem: 'geo',
+                hoverAnimation: true,
+                legendHoverLink: false,
+                // effectType: "ripple",
+                // rippleEffect: {
+                //     brushType: "stroke"
+                // },
+                data: alldata.map(function (itemOpt) {
+                    return {
+                        name: itemOpt.country,
+                        value: [
+                            itemOpt.longitude,
+                            itemOpt.latitude,
+                            itemOpt.money,
+                            itemOpt.num,
+                            itemOpt.industry
+                        ],
+                        symbol: "path://M48.458,27.859c0,11.377-9.222,20.599-20.599,20.599c-11.377,0-20.599-9.222-20.599-20.599 c0-11.377,9.223-20.599,20.599-20.599C39.235,7.26,48.458,16.482,48.458,27.859z M55.717,27.859 c0,15.361-12.497,27.858-27.858,27.858S0,43.22,0,27.859S12.497,0,27.858,0S55.717,12.498,55.717,27.859z M52.217,27.859 C52.217,14.428,41.289,3.5,27.858,3.5S3.5,14.428,3.5,27.859s10.927,24.358,24.358,24.358S52.217,41.29,52.217,27.859z",
+                        symbolSize: 8,
+                        label: {
+                            emphasis: {
+                                position: 'inside',
+                                show: false
+                            }
+                        },
+                        itemStyle: {
+                            normal: {
+                                // color: itemOpt.num > 3 ? "#000000" : "red"
+                            }
+                        }
+                    };
+                })
+            }];
+            chart_00.setOption(ECharts_00_option);
+            cb && cb()
+        });
+    }
+
+    $.get("json/world.json", function (worldjson) {
+        ajaxDataCancle("json/all.json", worldjson, function () {
+            $(window).resize(function () {
+
+                setTimeout(function () {
+                    chart_00.resize();
+                }, 500)
+            })
+        });
+
+        $("#selectYear").change(function () {
+            var url = $(this).val();
+            switch (url) {
+                case "json/all.json" :
+                    $(".tmt-name").html("").html("总览");
+                    break;
+                case "json/2012.json" :
+                    $(".tmt-name").html("").html("2012");
+                    break;
+                case "json/2013.json" :
+                    $(".tmt-name").html("").html("2013");
+                    break;
+                case "json/2014.json" :
+                    $(".tmt-name").html("").html("2014");
+                    break;
+                case "json/2015.json" :
+                    $(".tmt-name").html("").html("2015");
+                    break;
+                case "json/2016.json" :
+                    $(".tmt-name").html("").html("2016");
+                    break;
+
+            }
+            ajaxDataCancle(url, worldjson);
+        });
+    });
+
+    $("#jTop").click(function () {
+        $(window).scrollTop(0);
+    })
+});
+
+
+
+
+
+

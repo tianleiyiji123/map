@@ -200,7 +200,7 @@ a:visited {
   height: 11.73333333rem;
   position: relative;
   background: url(../images/map-bg.jpg) center no-repeat;
-  background-size: contain;
+  background-size: 16rem 11.73333333rem;
 }
 .contain .top-map .tm-title {
   width: 100%;
@@ -263,12 +263,12 @@ a:visited {
 }
 .contain .mid-charts .mid-mod .mm-title {
   width: 100%;
-  height: 0.66133333rem;
+  height: 0.72533333rem;
   margin: 0.53333333rem auto 0.53333333rem;
 }
 .contain .mid-charts .mid-mod .mm-title img {
   width: 9.17333333rem;
-  height: 0.66133333rem;
+  height: 0.72533333rem;
 }
 .contain .mid-charts .mid-mod .mid-each {
   width: 100%;
@@ -296,30 +296,17 @@ a:visited {
 }
 .contain .mid-charts .mid-mod .mid-each .of-charts {
   width: 100%;
-  padding-bottom:0.4rem;
-  overflow: hidden;
+  height: 12.8rem;
 }
 .contain .mid-charts .mid-mod .mid-each .echarts {
-  width: 96%;
-  height: 14rem;
+  width: 96% !important;
   margin: 0 auto;
 }
-
-#ECharts_04{
-  width: 96%;
-  height: 24rem;
-  margin: 0 auto;
+.contain .mid-charts .mid-bottom {
+  width: 100%;
+  margin: 0.64rem auto 0.64rem;
 }
-#ECharts_06{
-  width: 96%;
-  height: 44rem;
-  margin: 0 auto;
+.contain .mid-charts .mid-bottom img {
+  width: 100%;
+  display: block;
 }
-
-#ECharts_08{
-  width: 96%;
-  height: 24rem;
-  margin: 0 auto;
-}
-
-

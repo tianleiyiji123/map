@@ -1,0 +1,618 @@
+[
+  {
+    "country": "阿尔及利亚",
+    "longitude": "2.478107445",
+    "latitude": "27.63069789",
+    "industry": "金属制品制造 建筑装饰业 专用设备制造",
+    "money": "1.4021",
+    "num": "5"
+  },
+  {
+    "country": "阿根廷",
+    "longitude": "-62.84213587",
+    "latitude": "-36.77975441",
+    "industry": "",
+    "money": "0.0004",
+    "num": "1"
+  },
+  {
+    "country": "阿拉伯联合酋长国",
+    "longitude": "53.61710511",
+    "latitude": "23.67082727",
+    "industry": "",
+    "money": "0.7632",
+    "num": "5"
+  },
+  {
+    "country": "阿曼",
+    "longitude": "54.85480753",
+    "latitude": "21.61659469",
+    "industry": "",
+    "money": "0.0115",
+    "num": "2"
+  },
+  {
+    "country": "埃及",
+    "longitude": "30.90686812",
+    "latitude": "27.33411321",
+    "industry": "",
+    "money": "0.0005",
+    "num": "1"
+  },
+  {
+    "country": "埃塞俄比亚",
+    "longitude": "40.23698745",
+    "latitude": "9.578598886",
+    "industry": "服装鞋帽制造 黑色金属冶炼及压延加工 有色金属冶炼及压延加工",
+    "money": "2.9472",
+    "num": "19"
+  },
+  {
+    "country": "安哥拉",
+    "longitude": "18.09910673",
+    "latitude": "-11.60654381",
+    "industry": "",
+    "money": "0.066",
+    "num": "1"
+  },
+  {
+    "country": "澳大利亚",
+    "longitude": "127.2643633",
+    "latitude": "-15.33043258",
+    "industry": "农业 房地产 有色金属矿选采 ",
+    "money": "7.5029",
+    "num": "32"
+  },
+  {
+    "country": "巴布亚新几内亚",
+    "longitude": "143.5930012",
+    "latitude": "-5.593812279",
+    "industry": "",
+    "money": "0.048",
+    "num": "1"
+  },
+  {
+    "country": "巴基斯坦",
+    "longitude": "69.345116",
+    "latitude": "30.375321",
+    "industry": "煤炭开采和洗选 废弃资源回收加工 建筑安装",
+    "money": "2.6136",
+    "num": "9"
+  },
+  {
+    "country": "巴西",
+    "longitude": "-51.92528",
+    "latitude": "-14.235004",
+    "industry": "",
+    "money": "1.723",
+    "num": "5"
+  },
+  {
+    "country": "比利时",
+    "longitude": "4.469936",
+    "latitude": "50.503887",
+    "industry": "",
+    "money": "0.0201",
+    "num": "2"
+  },
+  {
+    "country": "波兰",
+    "longitude": "21.0122287",
+    "latitude": "52.2296756",
+    "industry": "",
+    "money": "0",
+    "num": "1"
+  },
+  {
+    "country": "朝鲜",
+    "longitude": "125.7625241",
+    "latitude": "39.0392193",
+    "industry": "",
+    "money": "0.0009",
+    "num": "1"
+  },
+  {
+    "country": "丹麦",
+    "longitude": "12.5683371",
+    "latitude": "55.6760968",
+    "industry": "",
+    "money": "0.0337",
+    "num": "2"
+  },
+  {
+    "country": "德国",
+    "longitude": "13.404954",
+    "latitude": "52.5200066",
+    "industry": "电气机械及器材制造 专用设备制造 研究与试验发展",
+    "money": "4.4156",
+    "num": "34"
+  },
+  {
+    "country": "多哥",
+    "longitude": "0.824782",
+    "latitude": "8.619543",
+    "industry": "",
+    "money": "0.005",
+    "num": "1"
+  },
+  {
+    "country": "俄罗斯",
+    "longitude": "37.6173",
+    "latitude": "55.755826",
+    "industry": "",
+    "money": "0.8634",
+    "num": "7"
+  },
+  {
+    "country": "法国",
+    "longitude": "2.3522219",
+    "latitude": "48.856614",
+    "industry": "",
+    "money": "0.2106",
+    "num": "14"
+  },
+  {
+    "country": "菲律宾",
+    "longitude": "120.9842195",
+    "latitude": "14.5995124",
+    "industry": "",
+    "money": "0.025",
+    "num": "1"
+  },
+  {
+    "country": "芬兰",
+    "longitude": "25.748151",
+    "latitude": "61.92411",
+    "industry": "",
+    "money": "0.8505",
+    "num": "2"
+  },
+  {
+    "country": "刚果",
+    "longitude": "21.758664",
+    "latitude": "-4.038333",
+    "industry": "林业 渔业 其他采矿业",
+    "money": "1.1101",
+    "num": "3"
+  },
+  {
+    "country": "哈萨克斯坦",
+    "longitude": "66.923684",
+    "latitude": "48.019573",
+    "industry": "石油和天然气开采业 其他采矿业 房屋和土木工程建筑业",
+    "money": "1.3182",
+    "num": "6"
+  },
+  {
+    "country": "韩国",
+    "longitude": "127.766922",
+    "latitude": "35.907757",
+    "industry": "",
+    "money": "0.1835",
+    "num": "20"
+  },
+  {
+    "country": "荷兰",
+    "longitude": "5.291266",
+    "latitude": "52.132633",
+    "industry": "",
+    "money": "0.5817",
+    "num": "10"
+  },
+  {
+    "country": "加拿大",
+    "longitude": "-116.5234475",
+    "latitude": "56.02652238",
+    "industry": "研究与试验发展 通信设备、计算机及其他电子设备制造业 废弃资源和废旧材料回收加工业",
+    "money": "1.3776",
+    "num": "20"
+  },
+  {
+    "country": "加纳",
+    "longitude": "-1.023194",
+    "latitude": "7.946527",
+    "industry": "",
+    "money": "0.1",
+    "num": "1"
+  },
+  {
+    "country": "柬埔寨",
+    "longitude": "104.8921668",
+    "latitude": "11.5448729",
+    "industry": "",
+    "money": "0.1305",
+    "num": "18"
+  },
+  {
+    "country": "津巴布韦",
+    "longitude": "29.154857",
+    "latitude": "-19.015438",
+    "industry": "",
+    "money": "0.086",
+    "num": "3"
+  },
+  {
+    "country": "开曼群岛",
+    "longitude": "-81.2546",
+    "latitude": "19.3133",
+    "industry": "商业服务业 医药制造业 研究与试验发展",
+    "money": "3.2328",
+    "num": "28"
+  },
+  {
+    "country": "肯尼亚",
+    "longitude": "36.8219462",
+    "latitude": "-1.2920659",
+    "industry": "",
+    "money": "0.065",
+    "num": "2"
+  },
+  {
+    "country": "老挝",
+    "longitude": "102.2428105",
+    "latitude": "19.62877803",
+    "industry": "",
+    "money": "0.248",
+    "num": "3"
+  },
+  {
+    "country": "卢森堡",
+    "longitude": "6.129583",
+    "latitude": "49.815273",
+    "industry": "",
+    "money": "0.0001",
+    "num": "1"
+  },
+  {
+    "country": "马尔代夫",
+    "longitude": "73.0892245",
+    "latitude": "-0.6060574",
+    "industry": "",
+    "money": "0.0049",
+    "num": "1"
+  },
+  {
+    "country": "马来西亚",
+    "longitude": "101.686855",
+    "latitude": "3.139003",
+    "industry": "通信设备、计算机及其他电子设备制造业 房地产业 其他服务业",
+    "money": "3.0427",
+    "num": "15"
+  },
+  {
+    "country": "美国",
+    "longitude": "-77.0368707",
+    "latitude": "38.9071923",
+    "industry": "房地产 专业技术服务 软件业 ",
+    "money": "17.821",
+    "num": "198"
+  },
+  {
+    "country": "蒙古",
+    "longitude": "106.9057439",
+    "latitude": "47.8863988",
+    "industry": "",
+    "money": "0.0287",
+    "num": "3"
+  },
+  {
+    "country": "孟加拉国",
+    "longitude": "90.356331",
+    "latitude": "23.684994",
+    "industry": "",
+    "money": "0.1655",
+    "num": "4"
+  },
+  {
+    "country": "秘鲁",
+    "longitude": "-75.015152",
+    "latitude": "-9.189967",
+    "industry": "",
+    "money": "0.0299",
+    "num": "1"
+  },
+  {
+    "country": "缅甸",
+    "longitude": "95.955974",
+    "latitude": "21.916221",
+    "industry": "",
+    "money": "0.7926",
+    "num": "21"
+  },
+  {
+    "country": "摩洛哥",
+    "longitude": "-7.09262",
+    "latitude": "31.791702",
+    "industry": "",
+    "money": "0.2355",
+    "num": "1"
+  },
+  {
+    "country": "莫桑比克",
+    "longitude": "35.529562",
+    "latitude": "-18.665695",
+    "industry": "",
+    "money": "0",
+    "num": "1"
+  },
+  {
+    "country": "墨西哥",
+    "longitude": "-102.552784",
+    "latitude": "23.634501",
+    "industry": "",
+    "money": "0.338",
+    "num": "4"
+  },
+  {
+    "country": "纳米比亚",
+    "longitude": "18.49041",
+    "latitude": "-22.95764",
+    "industry": "",
+    "money": "0.0408",
+    "num": "1"
+  },
+  {
+    "country": "南非",
+    "longitude": "22.937506",
+    "latitude": "-30.559482",
+    "industry": "",
+    "money": "0.4",
+    "num": "1"
+  },
+  {
+    "country": "尼泊尔",
+    "longitude": "84.124008",
+    "latitude": "28.394857",
+    "industry": "",
+    "money": "0.045",
+    "num": "1"
+  },
+  {
+    "country": "尼日利亚",
+    "longitude": "8.675277",
+    "latitude": "9.081999",
+    "industry": "",
+    "money": "0.5",
+    "num": "1"
+  },
+  {
+    "country": "挪威",
+    "longitude": "8.468946",
+    "latitude": "60.472024",
+    "industry": "",
+    "money": "0.0179",
+    "num": "1"
+  },
+  {
+    "country": "日本",
+    "longitude": "139.7319925",
+    "latitude": "35.7090259",
+    "industry": "",
+    "money": "0.312",
+    "num": "35"
+  },
+  {
+    "country": "瑞典",
+    "longitude": "18.0685808",
+    "latitude": "59.3293235",
+    "industry": "",
+    "money": "0.0307",
+    "num": "1"
+  },
+  {
+    "country": "瑞士",
+    "longitude": "8.541694",
+    "latitude": "47.3768866",
+    "industry": "",
+    "money": "0.1152",
+    "num": "3"
+  },
+  {
+    "country": "萨摩亚",
+    "longitude": "-172.4122462",
+    "latitude": "-13.61759472",
+    "industry": "",
+    "money": "0.1699",
+    "num": "3"
+  },
+  {
+    "country": "塞舌尔",
+    "longitude": "55.491977",
+    "latitude": "-4.679574",
+    "industry": "",
+    "money": "0.0405",
+    "num": "1"
+  },
+  {
+    "country": "沙特阿拉伯",
+    "longitude": "46.68316591",
+    "latitude": "24.71699908",
+    "industry": "",
+    "money": "0.025",
+    "num": "2"
+  },
+  {
+    "country": "斯里兰卡",
+    "longitude": "79.86439496",
+    "latitude": "6.929303354",
+    "industry": "",
+    "money": "0.27",
+    "num": "4"
+  },
+  {
+    "country": "泰国",
+    "longitude": "100.5462214",
+    "latitude": "13.76255472",
+    "industry": "金属制品业 环境管理业 化学原料及化学制品制造业",
+    "money": "2.2451",
+    "num": "17"
+  },
+  {
+    "country": "坦桑尼亚",
+    "longitude": "34.888822",
+    "latitude": "-6.369028",
+    "industry": "",
+    "money": "0.3945",
+    "num": "6"
+  },
+  {
+    "country": "土耳其",
+    "longitude": "32.83044969",
+    "latitude": "39.94034176",
+    "industry": "",
+    "money": "0.465",
+    "num": "2"
+  },
+  {
+    "country": "瓦努阿图",
+    "longitude": "166.959158",
+    "latitude": "-15.376706",
+    "industry": "",
+    "money": "0.002",
+    "num": "1"
+  },
+  {
+    "country": "文莱",
+    "longitude": "114.727669",
+    "latitude": "4.535277",
+    "industry": "",
+    "money": "0.012",
+    "num": "1"
+  },
+  {
+    "country": "乌克兰",
+    "longitude": "30.51875993",
+    "latitude": "50.45786383",
+    "industry": "",
+    "money": "0.028",
+    "num": "1"
+  },
+  {
+    "country": "西班牙",
+    "longitude": "-3.704588042",
+    "latitude": "40.41872454",
+    "industry": "",
+    "money": "0.1037",
+    "num": "3"
+  },
+  {
+    "country": "新加坡",
+    "longitude": "103.8679012",
+    "latitude": "1.358947534",
+    "industry": "研究与试验发展 批发 科技交流与推广服务",
+    "money": "1.941",
+    "num": "25"
+  },
+  {
+    "country": "新西兰",
+    "longitude": "174.8070068",
+    "latitude": "-41.32734433",
+    "industry": "",
+    "money": "0.8714",
+    "num": "6"
+  },
+  {
+    "country": "伊朗",
+    "longitude": "51.3889736",
+    "latitude": "35.68473586",
+    "industry": "",
+    "money": "0.9925",
+    "num": "2"
+  },
+  {
+    "country": "以色列",
+    "longitude": "34.8213996",
+    "latitude": "32.07460349",
+    "industry": "",
+    "money": "0.11",
+    "num": "3"
+  },
+  {
+    "country": "意大利",
+    "longitude": "12.49596887",
+    "latitude": "41.90056654",
+    "industry": "体育 研究与试验发展 商务服务业",
+    "money": "4.1722",
+    "num": "8"
+  },
+  {
+    "country": "印度",
+    "longitude": "77.2090212",
+    "latitude": "28.6139391",
+    "industry": "电气机械及器材制造业 通用设备制造业 商务服务业",
+    "money": "3.7071",
+    "num": "17"
+  },
+  {
+    "country": "印度尼西亚",
+    "longitude": "106.8406385",
+    "latitude": "-6.193462798",
+    "industry": "其他建筑业 化学原料及化学品制造 有色金属矿选采",
+    "money": "4.9979",
+    "num": "20"
+  },
+  {
+    "country": "英国",
+    "longitude": "-0.1277583",
+    "latitude": "51.5073509",
+    "industry": "零售业 批发业 食品制造业 ",
+    "money": "2.6994",
+    "num": "15"
+  },
+  {
+    "country": "英属维尔京群岛",
+    "longitude": "-64.62703093",
+    "latitude": "18.42942307",
+    "industry": "专业技术服务 商业服务 科技交流与技术推广 ",
+    "money": "3.0318",
+    "num": "14"
+  },
+  {
+    "country": "约旦",
+    "longitude": "36.19996185",
+    "latitude": "30.88734159",
+    "industry": "",
+    "money": "0.0551",
+    "num": "1"
+  },
+  {
+    "country": "越南",
+    "longitude": "105.8341598",
+    "latitude": "21.0277644",
+    "industry": "电力、热力的生产和供应业 商务服务业 纺织业 ",
+    "money": "2.4838",
+    "num": "17"
+  },
+  {
+    "country": "赞比亚",
+    "longitude": "27.849332",
+    "latitude": "-13.133897",
+    "industry": "",
+    "money": "0.482",
+    "num": "3"
+  },
+  {
+    "country": "智利",
+    "longitude": "-71.542969",
+    "latitude": "-35.675147",
+    "industry": "",
+    "money": "0.03",
+    "num": "2"
+  },
+  {
+    "country": "中国台湾",
+    "longitude": "121.5654177",
+    "latitude": "25.0329694",
+    "industry": "",
+    "money": "0.1736",
+    "num": "12"
+  },
+  {
+    "country": "中国香港",
+    "longitude": "114.109497",
+    "latitude": "22.396428",
+    "industry": "批发 商业服务 其他金融活动 ",
+    "money": "44.3492",
+    "num": "257"
+  }
+]
