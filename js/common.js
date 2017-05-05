@@ -21,4 +21,12 @@ $(function () {
             $("#shou").css("display", "block");
         })
     })
+
+    $(".tmtc-wx").click(function () {
+        if($(this).hasClass("open")){
+            $(this).removeClass("open")
+        }else {
+            $(this).addClass("open")
+        }
+    })
 });

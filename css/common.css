@@ -129,6 +129,32 @@ a, a:hover, a:active, a:visited {
 .contain .top-map .tm-title .tmt-chat a {
     float: left;
     margin: 10px;
+    position: relative;
+    display: block;
+    width: 37px;
+    cursor: pointer;
+}
+
+.contain .top-map .tm-title .code-down{
+    position: absolute;
+    width: 186px;
+    height: 210px;
+    background-color: #ffffff;
+    left:-70px;
+    top:60px;
+    display: none;
+}
+.contain .top-map .tm-title .tmt-chat .tmtc-wx.open .code-down{
+    display: block;
+}
+.contain .top-map .tm-title .code-down i{
+    position: absolute;
+    width: 37px;
+    height: 21px;
+    top: -21px;
+    left: 50%;
+    margin-left: -18px;
+    background: url("../images/code-bg.png");
 }
 
 .contain .top-map .tmi-position {

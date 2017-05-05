@@ -247,7 +247,7 @@
     };
     $(function () {
         var chart_00 = echarts.init(document.querySelector("#ECharts_00"));
-        function ajaxDataCancle(url, worldjson, cb) {
+        function ajaxDataCancle(url, worldjson) {
             $.get(url, function (alldata) {
 
                 echarts.registerMap('world', worldjson);
@@ -287,19 +287,11 @@
                     })
                 }];
                 chart_00.setOption(ECharts_00_option);
-                cb && cb()
             });
         }
 
-        $.get("json/world.json", function (worldjson) {
-            ajaxDataCancle("json/all.json", worldjson,function () {
-                $(window).resize(function () {
-
-                    setTimeout(function () {
-                        chart_00.resize();
-                    }, 500)
-                })
-            });
+        $.get("./json/world.json", function (worldjson) {
+            ajaxDataCancle("./json/all.json", worldjson);
             $(".tmb-nei a").click(function () {
                 $(this).addClass("active").siblings().removeClass("active");
             });

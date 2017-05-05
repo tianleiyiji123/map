@@ -50,9 +50,9 @@ function pyramid(vessel, arr, coord) {
                 }
         );
         vessel.append($svgPersons)
-        $svgPersons.animate({opacity:1},1000);
+        $svgPersons.animate({opacity:1},500);
         i++;
-    },500);
+    },30);
 
 }
 
