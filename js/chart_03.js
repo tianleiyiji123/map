@@ -210,4 +210,5 @@ var ECharts_03_option = {
     }]
 };
 var chart_03 = echarts.init(document.querySelector("#ECharts_03"));
+
 chart_03.setOption(ECharts_03_option);

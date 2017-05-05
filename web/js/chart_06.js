@@ -73,81 +73,19 @@ $(function () {
 
     var chart_06_option = {
         title: [{
-            text: '2016年',
-            x: '25%',
-            y: '60%',
+            text: '2016年比2012年项目和金额',
+            x: '50%',
+            y: '61%',
             textAlign: 'center',
             textStyle: {
                 color: "#95DDDC",
                 fontSize:14
             }
-        },{
-            text: '比',
-            x: '35%',
-            y: '60%',
-            textAlign: 'center',
-            textStyle: {
-                color: "#333333",
-                fontSize:14,
-                fontWeight:"normal"
-
-            }
-        },{
-            text: '2012年',
-            x: '45%',
-            y: '60%',
-            textAlign: 'center',
-            textStyle: {
-                color: "#E69489",
-                fontSize:14
-            }
         },
+
             {
-                text: '项目和金额',
-                x: '64%',
-                y: '60%',
-                textAlign: 'center',
-                textStyle: {
-                    color: "#333333",
-                    fontSize:14,
-                    fontWeight:"normal"
-                }
-            },
-            {
-                text: '分别上升：',
-                x: '20%',
-                y: '63%',
-                textAlign: 'center',
-                textStyle: {
-                    color: "#333333",
-                    fontSize:14,
-                    fontWeight:"normal"
-                }
-            },
-            {
-                text: '178.6%',
-                x: '40%',
-                y: '63%',
-                textAlign: 'center',
-                textStyle: {
-                    color: "#95DDDC",
-                    fontSize:16
-                }
-            },
-            {
-                text: '、',
-                x: '55%',
-                y: '63%',
-                textAlign: 'center',
-                textStyle: {
-                    color: "#333333",
-                    fontSize:14,
-                    fontWeight:"normal"
-                }
-            },
-            {
-                text: '240.8%',
-                x: '68%',
+                text: '分别上升: 178.6% 、 240.8%',
+                x: '50%',
                 y: '63%',
                 textAlign: 'center',
                 textStyle: {

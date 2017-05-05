@@ -48,7 +48,6 @@ $(function () {
         },
         legend: {
             right: 20,
-            orient: 'vertical',
             data: ['项目数(单位"个")', '投资额(单位"亿美元")']
         },
         xAxis: {

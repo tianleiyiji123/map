@@ -153,7 +153,8 @@ var ECharts_05_option = {
         },
         itemStyle: {
             normal: {
-                opacity: 0.5
+                opacity: 0.75,
+                color: "#94dddd"
             },
             emphasis: {
                 opacity: 1
@@ -163,22 +164,11 @@ var ECharts_05_option = {
 
             {
                 name: "香港",
-                value: 81,
-                itemStyle: {
-                    normal: {
-                        color: "#94dddd"
-
-                    }
-                }
+                value: 81
             },
             {
                 name: "美国",
-                value: 220,
-                itemStyle: {
-                    normal: {
-                        color: "#e69389"
-                    }
-                }
+                value: 220
             },
             {},
             {}, {}
@@ -203,7 +193,8 @@ var ECharts_05_option = {
             },
             itemStyle: {
                 normal: {
-                    opacity: 0.5
+                    opacity: 0.5,
+                    color: "#e69389"
                 },
                 emphasis: {
                     opacity: 1
@@ -215,26 +206,130 @@ var ECharts_05_option = {
                 {},
                 {
                     name: "澳大利亚",
-                    value: 30.6,
-                    itemStyle: {
-                        normal: {
-                            color: "#94dddd"
-                        }
-
-                    }
+                    value: 30.6
                 },
                 {
                     name: "印度尼西亚",
-                    value: 7.4,
-                    itemStyle: {
-                        normal: {
-                            color: "#e69389"
-
-                        }
-                    }
+                    value: 7.4
                 }
             ],
             z: 10
+        },
+        {
+            name: '年',
+            type: 'pictorialBar',
+            barCategoryGap: '-130%',
+            label: {
+                normal: {
+                    show: true,
+                    position: "top",
+                    formatter: '{b}',
+                    textStyle: {
+                        color: "#ffffff",
+                        fontSize: 14
+                    }
+                }
+            },
+            itemStyle: {
+                normal: {
+                    opacity:0
+                },
+                emphasis: {
+                    opacity: 0
+                }
+            },
+            data: [
+
+                {
+                    name:"2012年",
+                    value: 81,
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: "#94dddd"
+                            }
+                        }
+                    }
+                },
+                {
+                    name:"2016年",
+                    value: 220,
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: "#94dddd"
+                            }
+                        }
+                    }
+
+                }
+                , {},
+                {
+
+                },
+                {
+
+
+                }
+            ]
+        },
+        {
+            name: '投资',
+            type: 'pictorialBar',
+            barCategoryGap: '-130%',
+            yAxisIndex: 1,
+            label: {
+                normal: {
+                    show: true,
+                    position: "top",
+                    formatter: '{b}',
+                    textStyle: {
+                        color: "#ffffff",
+                        fontSize: 14
+                    }
+                }
+            },
+            itemStyle: {
+                normal: {
+                    opacity:0
+                },
+                emphasis: {
+                    opacity: 0
+                }
+            },
+            data: [
+
+                {
+
+                },
+                {
+
+                }
+                , {},
+                {
+                    name:"2012年",
+                    value: 30.6,
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: "#e69389"
+                            }
+                        }
+                    }
+                },
+                {
+                    name:"2016年",
+                    value: 7.4,
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: "#e69389"
+                            }
+                        }
+                    }
+
+                }
+            ]
         }]
 };
 var chart_05 = echarts.init(document.querySelector("#ECharts_05"));

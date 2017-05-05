@@ -29,4 +29,13 @@ $(function () {
             $(this).addClass("open")
         }
     })
+
+    $(window).scroll(function () {
+        console.log($(this).scrollTop())
+        if($(this).scrollTop()>30){
+            $(".tm-title").addClass("fixed")
+        }else {
+            $(".tm-title").removeClass("fixed")
+        }
+    })
 });

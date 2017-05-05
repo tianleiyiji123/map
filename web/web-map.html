@@ -101,7 +101,7 @@
                 <div class="me-title">2012年至今,江苏对外投资额最高的国家（地区）：香港</div>
                 <!--echart-1-->
                 <div class="of-charts">
-                    <div id="ECharts_01" class="echarts"></div>
+                    <div id="ECharts_01" class="echarts"  data-lazy-path="js/chart_01.js"></div>
                 </div>
 
             </div>
@@ -109,7 +109,7 @@
                 <div class="me-title">2012至今,江苏对外投资项目最多的国家（地区）：香港</div>
                 <!--echart-2-->
                 <div class="of-charts">
-                    <div id="ECharts_02" class="echarts"></div>
+                    <div id="ECharts_02" class="echarts" data-lazy-path="js/chart_02.js"></div>
                 </div>
 
             </div>
@@ -117,7 +117,7 @@
                 <div class="me-title">2012至今,江苏对外投资最集中的行业：商业服务业</div>
                 <!--echart-3-->
                 <div class="of-charts">
-                    <div id="ECharts_03" class="echarts"></div>
+                    <div id="ECharts_03" class="echarts" data-lazy-path="js/chart_03.js"></div>
                 </div>
 
             </div>
@@ -126,7 +126,7 @@
                     印尼科拿威有色金属冶炼及压延加工项目,投资额6.29亿美元；
                 </div>
                 <div class="of-charts">
-                    <div id="ECharts_04" class="echarts"></div>
+                    <div id="ECharts_04" class="echarts" data-lazy-path="js/chart_04.js"></div>
                 </div>
 
             </div>
@@ -137,13 +137,13 @@
             <div class="mid-each">
                 <div class="me-title">亮点一：对外投资规模屡创新高</div>
                 <div class="of-charts">
-                    <div id="ECharts_06"></div>
+                    <div id="ECharts_06"  data-lazy-path="js/chart_06.js"></div>
                 </div>
             </div>
             <div class="mid-each">
                 <div class="me-title">亮点二：海外并购占比显著提升</div>
                 <div class="of-charts">
-                    <div id="ECharts_05"></div>
+                    <div id="ECharts_05" data-lazy-path="js/chart_05.js"></div>
                 </div>
             </div>
             <div class="mid-each">
@@ -158,7 +158,7 @@
                 <div class="me-title">亮点四：“一带一路”建设积极推进</div>
                 <div class="of-charts">
                     <div class="ECharts_08_wrap">
-                        <div id="ECharts_08"></div>
+                        <div id="ECharts_08" data-lazy-path="js/chart_08.js"></div>
                         <img class="ECharts_08_wap_img_01" src="images/ECharts_08_wap_img_01.png">
                     </div>
 
@@ -195,6 +195,7 @@
 
 </script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/lazyload.js"></script>
 <script type="text/javascript" src="js/echarts.min.js"></script>
 <script type="text/javascript" src="js/latlong.js"></script>
 <script type="text/javascript" src="js/swiper.jquery.min.js"></script>
@@ -210,11 +211,36 @@
 </script>
 
 
-<script type="text/javascript" src="js/chart_01.js"></script>
+<!--<script type="text/javascript" src="js/chart_01.js"></script>
 <script type="text/javascript" src="js/chart_02.js"></script>
 <script type="text/javascript" src="js/chart_03.js"></script>
 <script type="text/javascript" src="js/chart_04.js"></script>
 <script type="text/javascript" src="js/chart_05.js"></script>
 <script type="text/javascript" src="js/chart_06.js"></script>
-<script type="text/javascript" src="js/chart_08.js"></script>
+<script type="text/javascript" src="js/chart_08.js"></script>-->
+<script>
+    $("#ECharts_01").lazyload({
+        type: "js"
+    })
+    $("#ECharts_02").lazyload({
+        type: "js"
+    })
+    $("#ECharts_03").lazyload({
+        type: "js"
+    })
+    $("#ECharts_04").lazyload({
+        type: "js"
+    })
+    $("#ECharts_05").lazyload({
+        type: "js"
+    })
+
+    $("#ECharts_06").lazyload({
+        type: "js"
+    })
+
+    $("#ECharts_08").lazyload({
+        type: "js"
+    })
+</script>
 </html>
