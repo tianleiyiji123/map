@@ -87,6 +87,13 @@ a, a:hover, a:active, a:visited {
     margin: 0 auto;
 }
 
+
+.qy{
+    padding: 45px 0 32px;
+}
+.jy{
+    padding: 25px 0 0;
+}
 .contain .top-map .tm-title {
     width: 100%;
     height: 75px;

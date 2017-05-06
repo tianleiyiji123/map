@@ -25,7 +25,13 @@ $(function () {
 
 
     /*监听宽度*/
-    console.log("111")
-    console.log()
+   var $tmInfo= $(".tm-info");
+    $(".tm-info .down").click(function () {
+        if($tmInfo.hasClass("active")){
+            $tmInfo.removeClass("active")
+        }else {
+            $tmInfo.addClass("active")
+        }
+    })
 
 });

@@ -191,6 +191,7 @@ a:visited {
 .contain {
   width: 100%;
   background-color: #ebebeb;
+  padding-bottom: 2rem;
 }
 .contain #ECharts_00 {
   height: 11.73333333rem;
@@ -201,6 +202,7 @@ a:visited {
   position: relative;
   background: url(../images/map-bg.jpg) center no-repeat;
   background-size: 16rem 11.73333333rem;
+  overflow: hidden;
 }
 .contain .top-map .tm-title {
   width: 100%;
@@ -368,13 +370,44 @@ a:visited {
 }
 
 .tm-info{
-  height: 4rem;
-  background-color: rgba(0, 0, 0, 0.42);
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 0.6rem 0;
+  padding-top: 0.3rem ;
+  transition: all 0.6s ;
+}
+.tm-info.active{
+  bottom: -5rem;
+}
+.tm-info .down{
+  width: 4rem;
+  height: 0.8rem;
+  background: rgba(0, 0, 0, 0.2) url("../images/j1.png") no-repeat center;
+  position: absolute;
+  top:-0.8rem;
+  left: 50%;
+  margin-left: -2rem;
+}
+
+.tm-info.active .down{
+  background: rgba(0, 0, 0, 0.2) url("../images/j2.png") no-repeat center;
+}
+.tm-info .dep{
+  position: absolute;
+  color: #ffffff;
+  font-size: 0.3rem;
+  text-align:  center;
+  height: 1.2rem;
+  line-height:1.2rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 0.05rem solid rgba(34, 34, 34, 0.71);
+  background-color: rgba(30, 46, 62, 0.58);
+
 }
 .tm-info .swiper-container{
   width: 80%;
@@ -386,13 +419,23 @@ a:visited {
 }
 
 .tm-info .swiper-slide h3{
-  font-size: 0.5rem;
+  font-size: 0.6rem;
+  margin-bottom: 0.3rem ;
 }
 .tm-info .swiper-slide p{
   font-size: 0.4rem;
   font-weight: 100;
   line-height: 0.8rem;
   height: 0.8rem;
+  position: relative;
+}
+
+.tm-info .swiper-slide p:after{
+  content: "|";
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top:0;
 }
 .tm-info .swiper-slide p span:nth-child(1){
   float: left;
@@ -401,5 +444,19 @@ a:visited {
 .tm-info .swiper-slide p span:nth-child(2){
   float: right;
 }
+.qy{
+  width:96%;
+  margin: 1rem auto;
+}
+.jy{
+  width:96%;
+  margin: 0 auto;
+}
+.qy img,
+.jy img{
+  width: 100%;
+  display: block;
+}
+
 
 
