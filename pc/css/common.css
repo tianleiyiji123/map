@@ -97,7 +97,7 @@ a, a:hover, a:active, a:visited {
 .contain .top-map .tm-title {
     width: 100%;
     height: 75px;
-    background: rgba(0, 0, 0, .5);
+    background: rgb(0, 0, 0);
     position: absolute;
     top: 0;
     left: 0;
