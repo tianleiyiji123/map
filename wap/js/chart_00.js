@@ -194,7 +194,7 @@ var ECharts_00_option = {
     },
     tooltip: {
         trigger: 'item',
-        padding: 10,
+        padding: 5,
         formatter: function (params) {
             return params.name + '<br/>' + '项目' + params.value[3] + '个&nbsp;&nbsp;|&nbsp;&nbsp;' + params.value[2] + '亿美元' + '<br/>' + '前三行业:' + (params.value[4] ? params.value[4] : '无');
         }
