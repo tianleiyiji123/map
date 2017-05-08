@@ -9,7 +9,7 @@ function browserRedirect() {
     var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
     var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
     if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
-        window.location.href="http://hudong.jstv.com/datanews/jstrade/pc/"
+        window.location.href = "http://hudong.jstv.com/datanews/jstrade/pc/"
     }
 }
 

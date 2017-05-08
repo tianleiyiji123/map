@@ -137,7 +137,16 @@ a, a:hover, a:active, a:visited {
     right: 0;
     top: 12px;
 }
+.bdsharebuttonbox{
+    float: left;
 
+}
+.contain .top-map .tm-title .tmt-chat .tmtc-wb{
+    background: url(../images/wb-icon.png) center no-repeat;
+    height: 31px!important;
+    padding-left: 0!important;
+    line-height: 31px!important;
+}
 .contain .top-map .tm-title .tmt-chat a {
     float: left;
     margin: 10px;
