@@ -220,7 +220,7 @@ var ECharts_00_option = {
         aspectScale: 1,
         scaleLimit: {
             min: 0.5,
-            max: 2
+            max: 8
         },
         label: {
             emphasis: {

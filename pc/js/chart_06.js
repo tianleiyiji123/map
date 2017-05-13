@@ -165,7 +165,7 @@ var chart_06_option = {
             }
         },
         {
-            text: '2012: 1:12',
+            text: '2012 1:12',
             x: '64%',
             y: '92.5%',
             textAlign: 'center',
@@ -186,7 +186,7 @@ var chart_06_option = {
             }
         },
         {
-            text: '2016: 1:1.9',
+            text: '2016 1:1.9',
             x: '84%',
             y: '92.5%',
             textAlign: 'center',

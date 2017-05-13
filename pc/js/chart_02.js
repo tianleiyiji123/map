@@ -4,14 +4,14 @@
 var chart_02 = echarts.init(document.querySelector("#ECharts_02"));
 var ECharts_02_option = {
     title: {
-        subtext: '投资项目数量',
+        subtext: '投资项目数量(个)',
         textAlign: "left",
         bottom: "2%",
         textStyle: {
             color: "#000000",
             fontSize: 14
         },
-        left: "40%",
+        left: "40%"
 
     },
     tooltip: {
@@ -211,7 +211,7 @@ var ECharts_02_option = {
         label: {
             normal: {
                 show: true,
-                position: "inside",
+                position: "right",
                 formatter: function (data) {
                     return data.value + "个"
                 }

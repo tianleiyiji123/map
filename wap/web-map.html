@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>map</title>
+    <title>江苏对外投资的全球布局路径</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
     <link rel="stylesheet" href="less/public.css" type="text/css">
@@ -13,7 +13,7 @@
     <div class="top-map">
         <div id="ECharts_00" style="width: 100%;"></div>
         <div class="tm-title">
-            <a class="tmt-logo"></a>
+            <a class="tmt-logo" href='http://www.ourjiangsu.com'></a>
             <div class="tmt-time">
                 <a class="tmt-name">总览</a>
                 <select name="" class="tmt-select" id="selectYear">
@@ -26,44 +26,47 @@
                 </select>
             </div>
         </div>
-        <div class="tm-info ">
+        <div class="tm-info " id="J-info">
             <div class="down"></div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h3>投资项目数前三&nbsp;&nbsp;(&nbsp;&nbsp;单位:个&nbsp;&nbsp;)</h3>
-                        <p><span>香港</span>  <span>991</span></p>
-                        <p><span>美国</span> <span>691</span></p>
-                        <p><span>日本</span> <span>129</span></p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h3>金额数前三&nbsp;&nbsp;(&nbsp;&nbsp;单位：亿美元&nbsp;&nbsp;)</h3>
-                        <p><span>香港</span>  <span>152.6496</span></p>
-                        <p><span>美国</span> <span>45.0730</span></p>
-                        <p><span>澳大利亚</span> <span>27.4099</span></p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h3>行业项目前三&nbsp;&nbsp;(&nbsp;&nbsp;单位:个&nbsp;&nbsp;)</h3>
-                        <p><span>批发业</span> <span>1087</span></p>
-                        <p><span>商业服务业</span> <span>577</span></p>
-                        <p><span>房地产</span> <span>118</span></p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h3>行业投资总额前三&nbsp;&nbsp;(&nbsp;&nbsp;单位：亿美元&nbsp;&nbsp;)</h3>
-                        <p><span>商业服务业</span>  <span>94.7146</span></p>
-                        <p><span>批发业</span>  <span>78.0357</span></p>
-                        <p><span>房地产</span>  <span>39.933</span></p>
-                    </div>
-                </div>
+            <!--<div id="j-html">-->
+            <!--<div class="swiper-container">-->
+            <!--<div class="swiper-wrapper">-->
+            <!--<div class="swiper-slide">-->
+            <!--<h3>投资项目数前三&nbsp;&nbsp;(&nbsp;&nbsp;单位:个&nbsp;&nbsp;)</h3>-->
+            <!--<p><span>香港</span>  <span>991</span></p>-->
+            <!--<p><span>美国</span> <span>691</span></p>-->
+            <!--<p><span>日本</span> <span>129</span></p>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+            <!--<h3>金额数前三&nbsp;&nbsp;(&nbsp;&nbsp;单位：亿美元&nbsp;&nbsp;)</h3>-->
+            <!--<p><span>香港</span>  <span>152.6496</span></p>-->
+            <!--<p><span>美国</span> <span>45.0730</span></p>-->
+            <!--<p><span>澳大利亚</span> <span>27.4099</span></p>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+            <!--<h3>行业项目前三&nbsp;&nbsp;(&nbsp;&nbsp;单位:个&nbsp;&nbsp;)</h3>-->
+            <!--<p><span>批发业</span> <span>1087</span></p>-->
+            <!--<p><span>商业服务业</span> <span>577</span></p>-->
+            <!--<p><span>房地产</span> <span>118</span></p>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide">-->
+            <!--<h3>行业投资总额前三&nbsp;&nbsp;(&nbsp;&nbsp;单位：亿美元&nbsp;&nbsp;)</h3>-->
+            <!--<p><span>商业服务业</span>  <span>94.7146</span></p>-->
+            <!--<p><span>批发业</span>  <span>78.0357</span></p>-->
+            <!--<p><span>房地产</span>  <span>39.933</span></p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<p class="dep">-->
+            <!--国家(地区)128个｜行业78个｜项目3673个｜总额428.84亿美元-->
+            <!--</p>-->
+            <!--</div>-->
 
-            </div>
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
 
-            <p class="dep">
-                国家(地区)128个｜行业78个｜项目3673个｜总额428.84亿美元
-            </p>
+
         </div>
     </div>
     <div class="qy">
@@ -179,6 +182,8 @@
 <script type="text/javascript" src="js/latlong.js"></script>
 <script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 <script type="text/javascript" src="js/chart_00.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="js/wx_api.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
         paginationClickable: true,
@@ -221,4 +226,14 @@
         type: "js"
     })
 </script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?0887eca0f2b20577c39d04671f83ed53";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
 </html>

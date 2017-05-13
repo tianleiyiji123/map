@@ -6,18 +6,14 @@ $(function () {
         {}
     ];
     var ECharts_01_option = {
+        title:{
+            show:true,
+            subtext:'投资额(单位"亿美元")',
+            top: 0,
+            right: 20
+        },
         grid: [
             {
-                show: true,
-                top: "10%",
-                width: '96%',
-                height: "80%",
-                bottom: 0,
-                left: 'center',
-                containLabel: true,
-                backgroundColor: "#f5f5f5",
-                borderWidth: 0
-            }, {
                 show: true,
                 top: "10%",
                 width: '96%',
@@ -90,8 +86,8 @@ $(function () {
             min: 0,
             max: 250,
             nameLocation: "middle",
-            minInterval:2,
-            interval:50,
+            minInterval: 2,
+            interval: 50,
             splitLine: {
                 show: true,
                 lineStyle: {
@@ -132,8 +128,8 @@ $(function () {
                 }]
         },
         backgroundColor: "#f5f5f5",
-        series: [{
-            name: 'hill',
+        series: {
+            name: '投资额(单位"亿美元")',
             type: 'pictorialBar',
             barCategoryGap: '-130%',
 //            symbol: 'path://M0,10 L10,10 L5,0 L0,10 z',
@@ -202,9 +198,8 @@ $(function () {
                         }
                     }
                 }
-            ],
-            z: 10
-        }]
+            ]
+        }
     };
     var chart_01 = echarts.init(document.querySelector("#ECharts_01"));
 

@@ -11,7 +11,7 @@ $(function () {
         },
         series: [
             {
-                name:'访问来源',
+                name:'2012年至今,江苏对外投资额最高的项目：印尼科拿威有色金属冶炼及压延加工项目,投资额6.92亿美元',
                 type:'pie',
                 selectedMode: 'single',
                 center:["50%","28%"],
@@ -19,7 +19,7 @@ $(function () {
                 label: {
                     normal: {
                         position: 'inner',
-                        formatter: "{c} 亿"
+                        formatter: "{c} \n亿美元"
                     }
                 },
                 labelLine: {

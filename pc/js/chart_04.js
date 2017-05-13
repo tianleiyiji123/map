@@ -13,7 +13,7 @@ var chart_04_option = {
     },
     series: [
         {
-            name:'访问来源',
+            name:'江苏对外投资最集中的行业(商业服务业)',
             type:'pie',
             selectedMode: 'single',
             center:["28%","50%"],
@@ -22,7 +22,7 @@ var chart_04_option = {
             label: {
                 normal: {
                     position: 'inner',
-                    formatter: "{c} 亿"
+                    formatter: "{c} \n亿美元"
 
                 }
             },

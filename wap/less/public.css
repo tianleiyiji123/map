@@ -370,7 +370,7 @@ a:visited {
 }
 
 .tm-info{
-  height: 5rem;
+  /*height: 5rem;*/
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   width: 100%;
@@ -379,9 +379,9 @@ a:visited {
   padding-top: 0.3rem ;
   transition: all 0.6s ;
 }
-.tm-info.active{
-  bottom: -5rem;
-}
+/*.tm-info.active{*/
+  /*bottom: -5rem;*/
+/*}*/
 .tm-info .down{
   width: 4rem;
   height: 0.8rem;
@@ -395,15 +395,24 @@ a:visited {
 .tm-info.active .down{
   background: rgba(0, 0, 0, 0.2) url("../images/j2.png") no-repeat center;
 }
+.swiper-container{
+  margin-bottom: 0.6rem!important;
+}
+.swiper-slide{
+  padding-right: 8px!important;
+}
+.swiper-button-next, .swiper-button-prev{
+  top:40%!important;
+}
 .tm-info .dep{
-  position: absolute;
+  /*position: absolute;*/
   color: #ffffff;
-  font-size: 0.3rem;
+  font-size: 0.5rem;
   text-align:  center;
-  height: 1.2rem;
+  /*height: 1.2rem;*/
   line-height:1.2rem;
-  left: 0;
-  bottom: 0;
+  /*left: 0;*/
+  /*bottom: 0;*/
   width: 100%;
   border-top: 0.05rem solid rgba(34, 34, 34, 0.71);
   background-color: rgba(30, 46, 62, 0.58);
@@ -424,7 +433,7 @@ a:visited {
   font-weight: 600;
 }
 .tm-info .swiper-slide p{
-  font-size: 0.4rem;
+  font-size: 0.6rem;
   font-weight: 100;
   line-height: 0.8rem;
   height: 0.8rem;

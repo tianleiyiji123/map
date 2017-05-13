@@ -5,6 +5,24 @@ var data = [
     {}
 ];
 var ECharts_01_option = {
+    title:{
+        show:true,
+        subtext:'投资额(单位"亿美元")',
+            top: 0,
+            right: 20
+    },
+    // legend: {
+    //     show: true,
+    //     top: 20,
+    //     right: 20,
+    //     data: [{
+    //         name: '投资额(单位"亿美元")',
+    //         icon:'',
+    //         textStyle: {
+    //             color: "#6c6c6c"
+    //         }
+    //     }]
+    // },
     tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -108,7 +126,7 @@ var ECharts_01_option = {
     },
     backgroundColor: "#f5f5f5",
     series: [{
-        name: 'hill',
+        name: '投资额(单位"亿美元")',
         type: 'pictorialBar',
         barCategoryGap: '-130%',
 //            symbol: 'path://M0,10 L10,10 L5,0 L0,10 z',
@@ -177,8 +195,7 @@ var ECharts_01_option = {
                     }
                 }
             }
-        ],
-        z: 10
+        ]
     }]
 };
 var chart_01 = echarts.init(document.querySelector("#ECharts_01"));

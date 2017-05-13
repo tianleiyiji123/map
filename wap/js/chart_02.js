@@ -8,7 +8,7 @@ $(function () {
     var chart_02 = echarts.init(document.querySelector("#ECharts_02"));
     var ECharts_02_option = {
         title: {
-            subtext: '投资项目数量',
+            subtext: '投资项目数量(个)',
             textAlign: "left",
             bottom: "2%",
             textStyle: {
@@ -215,7 +215,7 @@ $(function () {
             label: {
                 normal: {
                     show: true,
-                    position: "inside",
+                    position: "right",
                     formatter: function (data) {
                         return data.value + "个"
                     }
