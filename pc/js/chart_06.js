@@ -49,18 +49,18 @@ var chart_06_itemStyle = [
     }
 ];
 
-var chart_06_data_01= [562, 563, 666, 878, 1003];
-var chart_06_data_02= [53.9, 63.2, 66.6, 114, 130];
+var chart_06_data_01 = [562, 563, 666, 878, 1003];
+var chart_06_data_02 = [53.9, 63.2, 66.6, 114, 130];
 
-var chart_06_data_base=function (v,a) {
-    var arr =[]
+var chart_06_data_base = function (v, a) {
+    var arr = []
 
-    for (var i=0; i<a.length; i++){
+    for (var i = 0; i < a.length; i++) {
         arr.push({
-            value:v,
+            value: v,
             label: {
                 normal: {
-                    formatter:a[i].toString()
+                    formatter: a[i].toString()
                 }
             }
         })
@@ -77,27 +77,27 @@ var chart_06_option = {
         textAlign: 'center',
         textStyle: {
             color: "#95DDDC",
-            fontSize:14
+            fontSize: 14
         }
-    },{
+    }, {
         text: '比',
         x: '21%',
         y: '90%',
         textAlign: 'center',
         textStyle: {
             color: "#333333",
-            fontSize:14,
-            fontWeight:"normal"
+            fontSize: 14,
+            fontWeight: "normal"
 
         }
-    },{
+    }, {
         text: '2012年',
         x: '27%',
         y: '90%',
         textAlign: 'center',
         textStyle: {
             color: "#E69489",
-            fontSize:14
+            fontSize: 14
         }
     },
         {
@@ -107,8 +107,8 @@ var chart_06_option = {
             textAlign: 'center',
             textStyle: {
                 color: "#333333",
-                fontSize:14,
-                fontWeight:"normal"
+                fontSize: 14,
+                fontWeight: "normal"
             }
         },
         {
@@ -118,8 +118,8 @@ var chart_06_option = {
             textAlign: 'center',
             textStyle: {
                 color: "#333333",
-                fontSize:14,
-                fontWeight:"normal"
+                fontSize: 14,
+                fontWeight: "normal"
             }
         },
         {
@@ -129,7 +129,7 @@ var chart_06_option = {
             textAlign: 'center',
             textStyle: {
                 color: "#95DDDC",
-                fontSize:20
+                fontSize: 20
             }
         },
         {
@@ -139,8 +139,8 @@ var chart_06_option = {
             textAlign: 'center',
             textStyle: {
                 color: "#333333",
-                fontSize:14,
-                fontWeight:"normal"
+                fontSize: 14,
+                fontWeight: "normal"
             }
         },
         {
@@ -150,64 +150,77 @@ var chart_06_option = {
             textAlign: 'center',
             textStyle: {
                 color: "#E69489",
-                fontSize:20
+                fontSize: 20
             }
-        },{
+        }, {
             text: '对外投资和吸引外资的比例',
             x: '73%',
             y: '90%',
             textAlign: 'center',
             textStyle: {
                 color: "#333333",
-                fontSize:14,
-                fontWeight:"normal"
+                fontSize: 14,
+                fontWeight: "normal"
 
             }
         },
         {
-            text: '2012 1:12',
+            text: '2012',
             x: '64%',
             y: '92.5%',
             textAlign: 'center',
             textStyle: {
                 color: "#E69489",
-                fontSize:20
+                fontSize: 20
             }
         },
         {
-            text: '、',
-            x: '75%',
+            text: '\n 1:12',
+            x: '64%',
             y: '92.5%',
             textAlign: 'center',
             textStyle: {
-                color: "#333333",
-                fontSize:20,
-                fontWeight:"normal"
-            }
+                color: "#E69489",
+                fontSize: 14,
+                fontWeight: "normal"
+            },
+            padding:[20,0,0,0]
         },
         {
-            text: '2016 1:1.9',
+            text: '2016',
             x: '84%',
             y: '92.5%',
             textAlign: 'center',
             textStyle: {
                 color: "#95DDDC",
-                fontSize:20
+                fontSize: 20
             }
+        },
+        {
+            text: '\n 1:1.9',
+            x: '84%',
+            y: '92.5%',
+            textAlign: 'center',
+            textStyle: {
+                color: "#95DDDC",
+                fontSize: 14,
+                fontWeight: "normal"
+            },
+            padding:[20,0,0,0]
         }],
     tooltip: {},
     legend: {
-        top:20,
-        itemGap:230,
+        top: 20,
+        itemGap: 230,
         data: [{
-            name:'项目数(单位"个")',
-            textStyle:{
-                color:"#59B1E3"
+            name: '项目数(单位"个")',
+            textStyle: {
+                color: "#59B1E3"
             }
         }, {
-            name:'投资数(单位"亿美元")',
-            textStyle:{
-                color:"#B8A0EA"
+            name: '投资数(单位"亿美元")',
+            textStyle: {
+                color: "#B8A0EA"
             }
         }]
     },
@@ -216,7 +229,7 @@ var chart_06_option = {
         width: '90%',
         bottom: '50%',
         left: 'center'
-    },{
+    }, {
         top: 80,
         width: '90%',
         bottom: '50%',
@@ -293,8 +306,8 @@ var chart_06_option = {
             axisTick: {show: false},
             axisLabel: {show: false},
             axisLine: {
-                lineStyle:{
-                    color:"#dedede"
+                lineStyle: {
+                    color: "#dedede"
                 }
             }
         }
@@ -320,8 +333,8 @@ var chart_06_option = {
             axisTick: {show: false},
             axisLabel: {show: false},
             axisLine: {
-                lineStyle:{
-                    color:"#dedede"
+                lineStyle: {
+                    color: "#dedede"
                 }
             },
             data: [
@@ -339,7 +352,7 @@ var chart_06_option = {
     series: [
         {
             name: '项目基数',
-            silent:true,
+            silent: true,
             type: 'bar',
             xAxisIndex: 1,
             yAxisIndex: 1,
@@ -347,18 +360,18 @@ var chart_06_option = {
                 normal: {
                     position: "top",
                     show: true,
-                    textStyle:{
-                        color:"#59B1E3"
+                    textStyle: {
+                        color: "#59B1E3"
 
                     }
                 }
             },
-            data: chart_06_data_base(1004,chart_06_data_01),
+            data: chart_06_data_base(1004, chart_06_data_01),
             itemStyle: chart_06_itemStyle[2]
         },
         {
             name: '投资基数',
-            silent:true,
+            silent: true,
             type: 'bar',
             xAxisIndex: 1,
             yAxisIndex: 1,
@@ -366,12 +379,12 @@ var chart_06_option = {
                 normal: {
                     position: "top",
                     show: true,
-                    textStyle:{
-                        color:"#B8A0EA"
+                    textStyle: {
+                        color: "#B8A0EA"
                     }
                 }
             },
-            data: chart_06_data_base(800,chart_06_data_02),
+            data: chart_06_data_base(800, chart_06_data_02),
             itemStyle: chart_06_itemStyle[2]
         },
 
@@ -382,7 +395,7 @@ var chart_06_option = {
             xAxisIndex: 0,
             yAxisIndex: 0,
 
-            data:chart_06_data_01,
+            data: chart_06_data_01,
             itemStyle: chart_06_itemStyle[0]
         },
 
@@ -440,8 +453,8 @@ var chart_06_option = {
                     color: "#95DDDC"
                 }
             },
-            tooltip:{
-                formatter:"178.6%"
+            tooltip: {
+                formatter: "178.6%"
             }
         },
         {
@@ -472,8 +485,8 @@ var chart_06_option = {
                     color: "#E69489"
                 }
             },
-            tooltip:{
-                formatter:"240.8%"
+            tooltip: {
+                formatter: "240.8%"
             }
         },
         {

@@ -1,4 +1,3 @@
-
 $(function () {
     var chart_06 = echarts.init(document.getElementById('ECharts_06'));
 
@@ -51,25 +50,24 @@ $(function () {
         }
     ];
 
-    var chart_06_data_01= [562, 563, 666, 878, 1003];
-    var chart_06_data_02= [53.9, 63.2, 66.6, 114, 130];
+    var chart_06_data_01 = [562, 563, 666, 878, 1003];
+    var chart_06_data_02 = [53.9, 63.2, 66.6, 114, 130];
 
-    var chart_06_data_base=function (v,a) {
-        var arr =[]
+    var chart_06_data_base = function (v, a) {
+        var arr = []
 
-        for (var i=0; i<a.length; i++){
+        for (var i = 0; i < a.length; i++) {
             arr.push({
-                value:v,
+                value: v,
                 label: {
                     normal: {
-                        formatter:a[i].toString()
+                        formatter: a[i].toString()
                     }
                 }
             })
         }
-        console.log(arr)
         return arr;
-    }
+    };
 
     var chart_06_option = {
         title: [{
@@ -79,7 +77,7 @@ $(function () {
             textAlign: 'center',
             textStyle: {
                 color: "#95DDDC",
-                fontSize:14
+                fontSize: 14
             }
         },
 
@@ -90,81 +88,96 @@ $(function () {
                 textAlign: 'center',
                 textStyle: {
                     color: "#E69489",
-                    fontSize:16
+                    fontSize: 16
                 }
-            },{
+            }, {
                 text: '对外投资和吸引外资的比例',
                 x: '50%',
                 y: '88%',
                 textAlign: 'center',
                 textStyle: {
                     color: "#333333",
-                    fontSize:14,
-                    fontWeight:"normal"
+                    fontSize: 14,
+                    fontWeight: "normal"
 
                 }
             },
             {
-                text: '2012: 1:12',
+                text: '2012 ',
                 x: '32%',
                 y: '91%',
                 textAlign: 'center',
                 textStyle: {
                     color: "#E69489",
-                    fontSize:14,
+                    fontSize: 14,
                 }
             },
             {
-                text: '、',
-                x: '50%',
+                text: '\n 1:12',
+                x: '32%',
                 y: '91%',
                 textAlign: 'center',
                 textStyle: {
-                    color: "#333333",
-                    fontSize:14,
-                    fontWeight:"normal"
-                }
+                    color: "#E69489",
+                    fontSize: 12,
+                    fontWeight:"normal",
+
+                },
+                padding:[15,0,0,0]
             },
             {
-                text: '2016: 1:1.9',
+                text: '2016',
                 x: '65%',
                 y: '91%',
                 textAlign: 'center',
                 textStyle: {
                     color: "#95DDDC",
-                    fontSize:14,
+                    fontSize: 14,
                 }
+            },
+            {
+                text: '\n 1:1.9',
+                x: '65%',
+                y: '91%',
+                textAlign: 'center',
+                textStyle: {
+                    color: "#95DDDC",
+                    fontSize: 12,
+                    fontWeight:"normal",
+
+                },
+                padding:[15,0,0,0]
             }],
         tooltip: {},
         legend: {
-            top:20,
+            top: 20,
             data: [{
-                name:'项目数(单位"个")',
-                textStyle:{
-                    color:"#59B1E3"
+                name: '项目数(单位"个")',
+                textStyle: {
+                    color: "#59B1E3"
                 }
             }, {
-                name:'投资数(单位"亿美元")',
-                textStyle:{
-                    color:"#B8A0EA"
+                name: '投资数(单位"亿美元")',
+                textStyle: {
+                    color: "#B8A0EA"
                 }
             }]
         },
         grid: [{
             top: "10%",
             width: '90%',
-            height:"25%",
+            height: "25%",
             left: 'center'
-        },{
+        }, {
             top: "10%",
             width: '90%',
-            height:"25%",
+            height: "25%",
             left: 'center'
         }, {
             top: "70%",
             width: '90%',
-            height:"15%",
-            bottom:"10%",
+            height: "15%",
+            bottom: "10%",
             left: "center"
         }],
         xAxis: [
@@ -227,13 +240,13 @@ $(function () {
             },
             {
                 gridIndex: 2,
-                max:16,
+                max: 16,
                 splitLine: {show: false},
                 axisTick: {show: false},
                 axisLabel: {show: false},
                 axisLine: {
-                    lineStyle:{
-                        color:"#dedede"
+                    lineStyle: {
+                        color: "#dedede"
                     }
                 }
             }
@@ -260,8 +273,8 @@ $(function () {
                 axisTick: {show: false},
                 axisLabel: {show: false},
                 axisLine: {
-                    lineStyle:{
-                        color:"#dedede"
+                    lineStyle: {
+                        color: "#dedede"
                     }
                 },
                 data: [
@@ -279,7 +292,7 @@ $(function () {
         series: [
             {
                 name: '项目基数',
-                silent:true,
+                silent: true,
                 type: 'bar',
                 xAxisIndex: 1,
                 yAxisIndex: 1,
@@ -287,18 +300,18 @@ $(function () {
                     normal: {
                         position: "top",
                         show: true,
-                        textStyle:{
-                            color:"#59B1E3"
+                        textStyle: {
+                            color: "#59B1E3"
 
                         }
                     }
                 },
-                data: chart_06_data_base(1004,chart_06_data_01),
+                data: chart_06_data_base(1004, chart_06_data_01),
                 itemStyle: chart_06_itemStyle[2]
             },
             {
                 name: '投资基数',
-                silent:true,
+                silent: true,
                 type: 'bar',
                 xAxisIndex: 1,
                 yAxisIndex: 1,
@@ -306,12 +319,12 @@ $(function () {
                     normal: {
                         position: "top",
                         show: true,
-                        textStyle:{
-                            color:"#B8A0EA"
+                        textStyle: {
+                            color: "#B8A0EA"
                         }
                     }
                 },
-                data: chart_06_data_base(800,chart_06_data_02),
+                data: chart_06_data_base(800, chart_06_data_02),
                 itemStyle: chart_06_itemStyle[2]
             },
 
@@ -322,7 +335,7 @@ $(function () {
                 xAxisIndex: 0,
                 yAxisIndex: 0,
 
-                data:chart_06_data_01,
+                data: chart_06_data_01,
                 itemStyle: chart_06_itemStyle[0]
             },
 
@@ -380,8 +393,8 @@ $(function () {
                         color: "#95DDDC"
                     }
                 },
-                tooltip:{
-                    formatter:"178.6%"
+                tooltip: {
+                    formatter: "178.6%"
                 }
             },
             {
@@ -412,8 +425,8 @@ $(function () {
                         color: "#E69489"
                     }
                 },
-                tooltip:{
-                    formatter:"240.8%"
+                tooltip: {
+                    formatter: "240.8%"
                 }
             },
             {
